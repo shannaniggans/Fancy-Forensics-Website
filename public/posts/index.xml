@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Aug 2023 22:53:29 +1000</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.9   Download the Challenge Content</title>
+      <link>http://example.org/posts/2.9-download-the-challenge-content/</link>
+      <pubDate>Mon, 28 Aug 2023 22:53:29 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.9-download-the-challenge-content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.8   RegRipper</title>
+      <link>http://example.org/posts/2.8-regripper/</link>
+      <pubDate>Mon, 28 Aug 2023 22:53:23 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.8-regripper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.7   EZ Tools</title>
+      <link>http://example.org/posts/2.7-ez-tools/</link>
+      <pubDate>Mon, 28 Aug 2023 22:53:18 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.7-ez-tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.6   Autopsy Forensics</title>
+      <link>http://example.org/posts/2.6-autopsy-forensics/</link>
+      <pubDate>Mon, 28 Aug 2023 22:53:13 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.6-autopsy-forensics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.5   Installing Optional Utilities</title>
+      <link>http://example.org/posts/2.5-installing-optional-utilities/</link>
+      <pubDate>Mon, 28 Aug 2023 22:53:04 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.5-installing-optional-utilities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.4   Installing Windows Terminal and PowerShell 7</title>
+      <link>http://example.org/posts/2.4-installing-windows-terminal-and-powershell-7/</link>
+      <pubDate>Mon, 28 Aug 2023 22:52:59 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.4-installing-windows-terminal-and-powershell-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.3   Installing Windows in VirtualBox</title>
+      <link>http://example.org/posts/2.3-installing-windows-in-virtualbox/</link>
+      <pubDate>Mon, 28 Aug 2023 22:52:50 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.3-installing-windows-in-virtualbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.2   Installing VirtualBox With Winget</title>
+      <link>http://example.org/posts/2.2-installing-virtualbox-with-winget/</link>
+      <pubDate>Mon, 28 Aug 2023 22:52:41 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.2-installing-virtualbox-with-winget/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.1   (Optional) Package Manager for Windows</title>
+      <link>http://example.org/posts/2.1-optional-package-manager-for-windows/</link>
+      <pubDate>Mon, 28 Aug 2023 22:49:39 +1000</pubDate>
+      
+      <guid>http://example.org/posts/2.1-optional-package-manager-for-windows/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
