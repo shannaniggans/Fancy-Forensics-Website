@@ -1,7 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Introduction to DFIR'
-theme = 'hugo-book'
+theme = 'nightfall'
 paginate = 10
 
 [params]
