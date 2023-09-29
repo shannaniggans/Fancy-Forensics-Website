@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - 05 - Domain Delving
+title: 6. Domain Delving
 weight: 6
 ---
 

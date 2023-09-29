@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - 03 - Lateral Movement
+title: 4. Lateral Movement
 weight: 4
 ---
 

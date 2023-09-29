@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - 02 - Initial Access
+title: 3. Initial Access
 weight: 3
 ---
 

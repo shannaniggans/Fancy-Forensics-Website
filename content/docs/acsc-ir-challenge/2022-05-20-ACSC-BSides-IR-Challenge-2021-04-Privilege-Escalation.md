@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - 04 - Privilege Escalation
+title: 5. Privilege Escalation
 weight: 5
 ---
 

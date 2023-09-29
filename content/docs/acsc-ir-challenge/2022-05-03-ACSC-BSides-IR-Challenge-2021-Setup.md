@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - Setup
+title: 1. Setup
 weight: 1
 ---
 

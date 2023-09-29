@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - 01 - Getting Started
+title: 2. Getting Started
 weight: 2
 ---
 

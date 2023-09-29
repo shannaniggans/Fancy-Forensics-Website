@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - 08 - Alternate Persistence
+title: 8. Alternate Persistence
 weight: 8
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: ACSC BSides IR Challenge 2021 - 06 - Reestablishing Access
+title: 7. Reestablishing Access
 weight: 7
 ---
 
