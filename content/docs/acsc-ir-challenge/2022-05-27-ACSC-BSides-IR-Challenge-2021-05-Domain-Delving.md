@@ -27,7 +27,7 @@ To complete this section I have used the following tools:
 
 Using the parsed MFT output we can see the creation of the file "psmap.zip" in the SysInternals folder. Checking under the created column we get our answer.
 
-  ![psmap.zip in the MFT output](../images/posts/2022-03-26-06-29-15.png)
+  ![psmap.zip in the MFT output](../images/2022-03-26-06-29-15.png)
 
 <h5>Flag: 2021-04-01 04:10:20</h5>
 
@@ -98,9 +98,9 @@ We can also break down the PowerShell command that was set to run:
 
 Give that the question is looking for a configuration change, the date and time when the schedule task completed and updated the Windows defender configuration would be the likely flag. So we'll look at the defender eventlog - Microsoft-Windows-Windows Defender%4Operational.evtx. I have just reviewed this in notepad, but you could also run ParseEvtx to add this log to the timeline window in Autopsy (and why not add the Task operational log too).
 
-  ![Run ParseEvtx in Autopsy](../images/posts/DD-2-1.png)
+  ![Run ParseEvtx in Autopsy](../images/DD-2-1.png)
 
-  ![Configuration change identified in Defender logs](../images/posts/DD-2-2.png)
+  ![Configuration change identified in Defender logs](../images/DD-2-2.png)
 
 Building out a timeline of activity can be immensely helpful in identifying any gaps in attacker activity, and also the time frame of the attack. In the screenshot above, its nice to be able to see the task scheduler logs and then the order of events leading up to the configuration change at 05:12:01, which is our flag.
 
@@ -110,7 +110,7 @@ Building out a timeline of activity can be immensely helpful in identifying any 
 <h5>What time (UTC) was the scheduled task used for the Defender configuration change first created?</h5>
 
 Can find this in the MFT for the created date and time.
-  ![](../images/posts/2022-04-01-07-54-33.png)
+  ![](../images/2022-04-01-07-54-33.png)
 
 <h5>Flag: 2021-04-01 03:49:01</h5>
 
@@ -119,7 +119,7 @@ Can find this in the MFT for the created date and time.
 
 * We know the lsass was dumped at 03:35:00 to disk, so the attacker would have been able to get the credentials and start lateral movement after this time.
   
-  ![Next logon recorded](../images/posts/DD-3-1.png)
+  ![Next logon recorded](../images/DD-3-1.png)
 
 * "4648: A logon was attempted using explicit credentials - 
 This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
@@ -131,7 +131,7 @@ This event is generated when a process attempts to log on an account by explicit
 
 The event log we looked at above (ID:4648) shows us an attempt. At 05:44:26 there is another 4648 event recorded attempting to access the file server. Presumably it will be one of these hosts. 
 
-  ![SMB logon to DC](../images/posts/DD-4-1.png)
+  ![SMB logon to DC](../images/DD-4-1.png)
 
 Given they are connecting via SMB, lets parse the Microsoft-Windows-SmbClient%4Connectivity.evtx and Microsoft-Windows-SmbClient%4Security.evtx eventlogs and see what they tell us.
 
@@ -139,7 +139,7 @@ In our event log timeline we see the Event ID 30803 and the target system 10.1.1
 
 Supporting this is Event ID 31010: `The SMB client failed to connect to the share.`
 
-  ![SMB Failed logon](../images/posts/DD-4-2.png)
+  ![SMB Failed logon](../images/DD-4-2.png)
 
 <h5>Flag: corp-file</h5>
 
@@ -154,7 +154,7 @@ MFTECmd.exe -f "`$MFT" --csv yourlocation\artefacts\corp-dc.alien.local\dc\Colle
 
 Reviewing the eventlogs in Autopsy for corp-dc, we come across an item in the system event log - Event ID 7045: A new service was installed in the system. 
 
-  ![EventID 7045](../images/posts/DD-5.png)
+  ![EventID 7045](../images/DD-5.png)
 
 PsExec is a tool included in the Sysinternals Suite created by Mark Russinovich. Originally, it was intended as a convenience tool for system administrators so they could perform maintenance tasks by running commands on remote hosts. By providing the address of a target host, a valid user and a password, you can get control of a machine remotely. When psexec is used to run something on a remote system, it works by creating a new service executable called psexesvc.exe and runs the desired command.
 
@@ -165,7 +165,7 @@ PsExec is a tool included in the Sysinternals Suite created by Mark Russinovich.
 
 Knowing that there was "some output", I looked at the MFT output to see if I could see a likely file, and something did jump out at me ... `ad.zip` in the C:\temp directory. So filtering on the ParentPath .\temp I now have a good starting place and an idea of what has happened.
 
-  ![temp directory contents](../images/posts/DD-6-1.png)
+  ![temp directory contents](../images/DD-6-1.png)
 
 There are two directories that were created during our attacker access, Active Directory and registry, containing ntds.jfm and ntds.dit, and SYSTEM and SECURITY files respectively. If you arent sure what is going on by this stage, its a good amount of information to turn to google to get some clues.
 
@@ -175,11 +175,11 @@ Utilising the inbuilt tool 'Ntdsutil', the ntds.dit file and the system registry
 
 I then did a keyword search in Autopsy across the event logs and found the following event confirming the use of ntdsutil and gives us the exact location: C:\Windows\System32\ntdsutil.exe.
 
-  ![ntdsutil usage](../images/posts/DD-6-2.png)
+  ![ntdsutil usage](../images/DD-6-2.png)
 
 Reviewing the event log timeline in Autopsy you can see multiple events related to the use of ntdsutil and the output directories and when the PSEXECSVC completed.
 
-  ![ntdsutil usage](../images/posts/DD-6-3.png)
+  ![ntdsutil usage](../images/DD-6-3.png)
 
 For more information and context on this style of attack:
 * <a href="https://www.puckiestyle.nl/extracting-password-hashes-from-the-ntds-dit-file/">extracting-password-hashes-from-the-ntds-dit-file</a>
@@ -205,7 +205,7 @@ From our Autopsy event log table:
 * 2021-04-01 06:18:53 - SMB access attempt from corp-webdev to corp-file using account `re_bmilton`
 * 2021-04-01 06:18:53 - EventID 4624 (An account was successfully logged on) in corp-file security event log.
 
-  ![Successful logon with re_bmilton](../images/posts/DD-7-1.png)
+  ![Successful logon with re_bmilton](../images/DD-7-1.png)
 
 <h5>Flag: re_bmilton</h5>
 

@@ -19,7 +19,7 @@ Our actor IP address we know about is 13.54.35.87. I actually flagged this in th
 2. Click on the search icon.
 3. Add a field for Remote Address equals 13.54.35.87.
 
-   ![Network connections in trufflepig Nexus](../images/posts/AP-1.png)
+   ![Network connections in trufflepig Nexus](../images/AP-1.png)
 
 <h5>Flag: 13.54.35.87:5555</h5>
 

@@ -36,12 +36,12 @@ This part of the CTF is just about looking at the artefacts and data received, c
 We cant always use PowerShell to get an image if there is compression or added metadata (such as an E01 or an AFF file).
 
 1. In FTK Imager, add `memory.raw` as an evidence item.
-   ![FTK select source](../images/posts/FTK-select-source.png)
+   ![FTK select source](../images/FTK-select-source.png)
 2. Click next and browse to where you have memory.raw decompressed. You'll then have the memory image in the evidence tree section of FTK Imager.
 3. Right click on memory.raw and select "verify Drive/Image"
-   ![FTK verify image](../images/posts/FTK-verify-drive.png)
+   ![FTK verify image](../images/FTK-verify-drive.png)
 4. Allow the verification process to complete, the results will be displayed on screen.   
-   ![FTK verify image](../images/posts/image-verification-results.png)
+   ![FTK verify image](../images/image-verification-results.png)
 
 <h5>Flag: 20b25f76cc1839c2e7759a69a82bf664</h5>
 
@@ -77,7 +77,7 @@ PE TimeDateStamp        Mon Nov 22 08:46:06 2010
 1. Create a project in Nexus and import the memory.raw image.
 2. From the menu on the left choose "metaInfo"
 3. Scroll down to "SystemTime"
-  ![MetaInfo in Nexus](../images/posts/GS-3-2-nexus.png)
+  ![MetaInfo in Nexus](../images/GS-3-2-nexus.png)
 
 <h5>Flag: 2021-04-06 01:56:57</h5>
 
