@@ -13,34 +13,18 @@ Last Updated: 18 July 2022
 | Name | Description |
 |------|-------------|
 | [This Week in 4n6](https://thisweekin4n6.com/podcast/) | This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community. |
+| [Risky Business](https://risky.biz/)| Published weekly, the Risky Business podcast features news and in-depth commentary from security industry luminaries. Hosted by award-winning journalist Patrick Gray, Risky Business has become a must-listen digest for information security professionals. |
+| [Darknet Diaries](https://darknetdiaries.com/) | True stories from the dark side of the Internet. This is a podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network. |
+| [Forensics Reformatted Podcast](https://anchor.fm/4n6reformatted) | Forensics Reformatted is a Digital Forensics podcast by former Chewing the FAT hosts, Adam Firman & Phil Cobley. The show is self-funded and aimed at supporting the DFIR community through insights, humour, and bringing together others from in and around the industry. |
+| [Stark4n6 Forensics Startme Page](https://start.me/p/q6mw4Q/forensics) | One stop shop for DFIR resources and links, from tools, cheatsheets, hardware, blog feeds and more. Blog also has a load of CTF write ups. |
+    
+## Communities
 
-
-
-
-
-<div class="table">
-  <table><tbody>
-    <th colspan="2"><h2>Podcasts & Blogs<a target="_blank" name ="Podcasts"></a></h2></th>
-    <tr> 
-      <td><h4><a target="_blank" href="https://thisweekin4n6.com/podcast/">This Week in 4n6</a></h4></td>
-      <td>This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community.</td>
-    </tr>
-    <tr> 
-      <td><h4><a target="_blank" href="https://risky.biz/">Risky Business</a></h4></td>
-      <td>Published weekly, the Risky Business podcast features news and in-depth commentary from security industry luminaries. Hosted by award-winning journalist Patrick Gray, Risky Business has become a must-listen digest for information security professionals.</td>
-    </tr>
-    <tr> 
-      <td><h4><a target="_blank" href="https://darknetdiaries.com/">Darknet Diaries</a></h4></td>
-      <td>True stories from the dark side of the Internet. This is a podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.</td>
-    </tr>
-    <tr> 
-      <td><h4><a target="_blank" href="https://anchor.fm/4n6reformatted">Forensics Reformatted Podcast</a></h4></td>
-      <td>Forensics Reformatted is a Digital Forensics podcast by former Chewing the FAT hosts, Adam Firman & Phil Cobley. The show is self-funded and aimed at supporting the DFIR community through insights, humour, and bringing together others from in and around the industry.</td>
-    </tr>
-    <tr> 
-      <td><h4><a target="_blank" href="https://start.me/p/q6mw4Q/forensics">Stark4n6 Forensics Startme Page</a></h4></td>
-      <td>One stop shop for DFIR resources and links, from tools, cheatsheets, hardware, blog feeds and more. Blog also has a load of CTF write ups.</td>
-    </tr>
+| Name | Description |
+|------|-------------|
+    
+    
+ 
     <th colspan="2"><h2>Communities<a target="_blank" name ="Communities"></a></h2></th>
     <tr> 
       <td><h4><a target="_blank" href="https://discord.com/invite/crH7RQeJZz">ComfyCon Discord</a></h4></td>
@@ -50,6 +34,13 @@ Last Updated: 18 July 2022
       <td><h4><a target="_blank" href="https://discord.gg/digitalforensics">Digital Forensics Discord</a></h4></td>
       <td>A Discord server ran by and for the DFIR Community!</td>
     </tr>
+
+
+## Books & reading materials
+
+| Name | Description |
+|------|-------------|
+
 
   <th colspan="2"><h2>Books & Reading Materials<a target="_blank" name ="Books"></a></h2></th>
   <tr><td colspan="2"><h3>Industry Reports</h3></td></tr>
@@ -64,6 +55,11 @@ Last Updated: 18 July 2022
         <td><h4><a target="_blank" href="https://www.mandiant.com/sites/default/files/2021-09/mandiant-apt1-report.pdf">Mandiant APT1 Report</a></h4></td>
       <td>APT1 is one of dozens of threat groups Mandiant tracks around the world and we consider it to be one of the most prolific in terms of the sheer quantity of information it has stolen.</td>
     </tr>
+
+## "Text" books
+
+| Name | Description |
+|------|-------------|
 
   <tr><td colspan="2"><h3>"Text" Books</h3></td></tr>
 
@@ -80,6 +76,11 @@ Last Updated: 18 July 2022
     <td>Memory forensics is the art of analyzing computer memory (RAM) to solve digital crimes. As a follow-up to the best seller Malware Analyst's Cookbook, experts in the fields of malware, security, and digital forensics bring you a step-by-step guide to memory forensics―now the most sought after skill in the digital forensics and incident response fields.</td>
     </tr>
 
+## Other books
+
+| Name | Description |
+|------|-------------|
+
   <tr><td colspan="2"><h3>Other Books</h3></td></tr>
 
   <tr> 
@@ -94,6 +95,10 @@ Last Updated: 18 July 2022
       <td><h4><a target="_blank" href="https://www.amazon.com.au/Spy-Moscow-Station-Counterspys-Deadly/dp/1250301165">The Spy in Moscow Station</a></h4></td>
     <td>In the late 1970s, the National Security Agency still did not officially exist--those in the know referred to it dryly as the No Such Agency. So why, when NSA engineer Charles Gandy filed for a visa to visit Moscow, did the Russian Foreign Ministry assert with confidence that he was a spy?Outsmarting honey traps and encroaching deep enough into enemy territory to perform complicated technical investigations, Gandy accomplished his mission in Russia, but discovered more than State and CIA wanted him to know.</td>
   </tr>
+
+| Name | Description |
+|------|-------------|
+
 
   <th colspan="2"><h2>Free Online Training<a target="_blank" name ="FreeOnlineTraining"></a></h2></th>
 
