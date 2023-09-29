@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Introduction to DFIR'
+title = 'CTF Walk-throughs'
 theme = 'hugo-book'
 paginate = 10
 
