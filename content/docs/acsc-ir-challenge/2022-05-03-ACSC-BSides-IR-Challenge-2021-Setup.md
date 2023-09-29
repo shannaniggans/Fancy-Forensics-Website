@@ -20,7 +20,7 @@ So I could pretend to play along I setup an instance of ctfd locally in docker f
     <li>Imported the provided ctfd_config.zip to my instance.</li>
 </ol>
 
-   ![Local CTFd setup]({{site.baseurl}}../images/ACSC_Challenge_2021-Setup01.png)
+   ![Local CTFd setup](../images/ACSC_Challenge_2021-Setup01.png)
 
 ## Disk Forensics
 ### Autopsy
