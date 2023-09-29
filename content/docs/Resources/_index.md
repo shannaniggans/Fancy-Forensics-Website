@@ -1,6 +1,6 @@
 ---
 title: DFIR knowledge and resources
-weight: 20
+weight: 200
 ---
 # DFIR Resources
 
