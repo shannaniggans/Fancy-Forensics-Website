@@ -10,8 +10,8 @@ Last Updated: 18 July 2022
 
 ## Podcast & Blogs
 
-|             |              |
-|-------------|--------------|
+| Name | Description |
+|------|-------------|
 | [This Week in 4n6](https://thisweekin4n6.com/podcast/) | This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community. |
 
 
