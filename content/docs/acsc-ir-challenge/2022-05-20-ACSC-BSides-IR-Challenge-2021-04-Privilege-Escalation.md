@@ -41,21 +41,21 @@ It is exactly the same timestamp as `corp-webdev`.
 <h5>What user account was the actor running these commands as?</h5>
 1. I'm going to add the artefact folder to Autopsy and run the ParseEVTX plugin.
    
-   ![Specify a new host name]({{site.baseurl}}/assets/images/posts/PE-2-1.png)
+   ![Specify a new host name](../images/posts/PE-2-1.png)
 
 2. Select the data source type as "Logical Files".
 3. Browse to the folder "C" and progress.
    
-   ![Specify a new host name]({{site.baseurl}}/assets/images/posts/PE-2-2.png)
+   ![Specify a new host name](../images/posts/PE-2-2.png)
 
 4. When you get to the configure ingest window, "deselect All" and then scroll down to "ParseEvtx, and select Security, System and Application in the configuration window and click next and finish and wait for the parser to finish.
    
-   ![Specify a new host name]({{site.baseurl}}/assets/images/posts/PE-2-3.png)
+   ![Specify a new host name](../images/posts/PE-2-3.png)
 
 5. Once the parser has completed, we'll see the Windows Event Logs in the Data Artifacts Tree on the left. Select that branch and we can now view the parsed eventlogs.
 6. We know the timestamp, so we can check the event logs at that time. Just prior to 03:08 there is an entry in the Security eventlog, Event ID 4799 - "A security-enabled local group membership was enumerated". The information in the log show us that the user was IIS APPPOOL and that the command they ran was net1.exe
 
-   ![Specify a new host name]({{site.baseurl}}/assets/images/posts/PE-2-4.png)
+   ![Specify a new host name](../images/posts/PE-2-4.png)
 
 <h5>Flag: IIS APPPOOL\alien</h5>
 
@@ -70,12 +70,12 @@ From the screenshot above we can see they ran net1.exe, but that's not the answe
 <h5>The actor needed legitimate credentials with higher privilege to continue their attack. What account did they use which had higher privileges?</h5>
 We'll want to take a look at what users were logged onto the system so we will want to look for event ID <a target="_blank" href="https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4624">4624: An account was successfully logged on.</a> To demonstrate additional Autopsy plugins, I'll use the python plugin <a target="_blank" href="https://github.com/markmckinnon/Autopsy-Plugins/tree/master/Process_EVTX_By_EventID">Process_EVTX_By_EventID</a>. Ensure you enter in the EventID into the field before checking the box next to "Other".
 
-   ![ParseEvtxByEventID]({{site.baseurl}}/assets/images/posts/PE-3-1.png)
+   ![ParseEvtxByEventID](../images/posts/PE-3-1.png)
 
 1. Check out the results in the Data Artifacts tree on the left.
 2. We can see the next account used to login (EventID 4624) was "alien_db".
 
-   ![EventID 4624]({{site.baseurl}}/assets/images/posts/PE-3-2.png)
+   ![EventID 4624](../images/posts/PE-3-2.png)
 
 <h5>Flag: alien_db</h5>
 
@@ -83,11 +83,11 @@ We'll want to take a look at what users were logged onto the system so we will w
 <h5>ALIEN are concerned about the actor using this account - it's an account only used by DotNetNuke to communicate with the supporting database. Potentially the credentials were hard-coded somewhere! Which file could the actor have possibly rooted this password out from?</h5>
 Reviewing the MFT will give us an idea of what files were available in the folder, I use EZ Tools "MFTExplorer.exe" as its a bit easier to navigate in the tree structure than reviewing the excel output we already have, but either works.
 
-   ![Load the MFT into MFTExplorer]({{site.baseurl}}/assets/images/posts/PE-M-4-1.png)
+   ![Load the MFT into MFTExplorer](../images/posts/PE-M-4-1.png)
 
 **Note: This will probably take a fairly decent amount of time to load up.**
 
-   ![Load the MFT into MFTExplorer]({{site.baseurl}}/assets/images/posts/PE-M-4-2.png)
+   ![Load the MFT into MFTExplorer](../images/posts/PE-M-4-2.png)
 
 I then Googled "dotnetnuke+db password" to see if i can get an idea of where the password might be stored and found this - <a href="https://www.dnnsoftware.com/forums/threadid/381245/scope/posts/how-do-i-find-my-database-password">"how do I find my database password"</a>.
   * *The databasename, userid, and password will be found in the < connectionStrings > section of the site's **web.config** file located in the root of the site's filesystem. It is not accessible from the portal or host settings or from the file manager. It is not necessary to keep the same database password. When moving the site don't forget to update BOTH connection strings with the new information. The second connection string is under the < appSettings > section of web.config and is the node with key="SiteSqlServer".*
@@ -110,7 +110,7 @@ corp-webdev MFT output around the time of the alien_db account logging on.
 
 Just prior to this there is a task created at 2021-04-01 03:29:23: "Windows NUpdate" - looks suspect.
 
-   ![Suspicious task created]({{site.baseurl}}/assets/images/posts/PE-4.png)
+   ![Suspicious task created](../images/posts/PE-4.png)
 
 <h5>Flag: 2021-04-01 03:29:23</h5>
 
@@ -152,4 +152,4 @@ The easiest way to check this is to go back to our MFT output and find the creat
 
 **Note: You may have noticed another task called Windows YUpdate in the task folder as well... I wonder when we need to look at that?**
 
-   ![Windows tasks]({{site.baseurl}}/assets/images/posts/PE-6.png)
+   ![Windows tasks](../images/posts/PE-6.png)

@@ -78,7 +78,7 @@ Eric Zimmerman provides a PowerShell script to download and catalogue the versio
     .\Get-ZimmermanTools.ps1
 ```
 
-![EZTools script]({{site.baseurl}}/assets/images/posts/EZTools-setup.png)
+![EZTools script](../images/posts/EZTools-setup.png)
 
 #### * MFTECmd.exe
 

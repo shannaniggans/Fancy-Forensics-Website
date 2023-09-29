@@ -108,7 +108,7 @@ index="acsc_ir_challenge_2021"
 | table _time, c_ip, cs_uri_stem, cs_method, sc_status
 ```
 
-   ![Response 404 results]({{site.baseurl}}/assets/images/posts/RA-1.png)
+   ![Response 404 results](../images/posts/RA-1.png)
 
 <h5>Flag: 2021-04-05 21:40:19</h5>
 
@@ -282,7 +282,7 @@ So they have no reestablished external access at 2021-04-05 23:16:07 when they r
 
 So we are then looking for events after this time for when they may have transferred files from dmz-webpub to corp-webdev over SMB as they did in the past.
 
-   ![Corresponding Event logs]({{site.baseurl}}/assets/images/posts/RA-2.png)
+   ![Corresponding Event logs](../images/posts/RA-2.png)
 
 <table class="table table-striped table-sm small auto">
   <caption class="figure-caption text-center">Table: Security eventlog timeline in Autopsy.</caption>
@@ -338,7 +338,7 @@ F:\EZTools\Get-ZimmermanTools\MFTECmd.exe -f "(location)\ACSC\ACSC_IR_Challenge_
 ```
 Right at the bottom when we scroll down we see the data and the webshell.
 
-   ![webshell contents]({{site.baseurl}}/assets/images/posts/RA-3.png)
+   ![webshell contents](../images/posts/RA-3.png)
 
 <code>(Request.Item[<mark>"tinfoil"</mark>]</code>
 
@@ -355,16 +355,16 @@ Running MFTECmd.exe again and focusing on this specific file will show us what i
 F:\EZTools\Get-ZimmermanTools\MFTECmd.exe -f "(location)\ACSC\ACSC_IR_Challenge_2021\artefacts\corp-webdev.alien.local\C\`$MFT" --de 638-58
 ```
 
-   ![webshell contents of sample 2]({{site.baseurl}}/assets/images/posts/RA-4.png)
+   ![webshell contents of sample 2](../images/posts/RA-4.png)
 
 The flag answer they gave was `8a0ff044f892d72dbfb8fe9d6a395d47` which I cannot replicate. If anyone can point me in the right direction I'd appreciate it!
 
-   ![CyberChef Hash results]({{site.baseurl}}/assets/images/posts/RA-5.png)
+   ![CyberChef Hash results](../images/posts/RA-5.png)
 
 #### UPDATE
 With some assistance we went back to the ACSC for clarification and there was actually a new line character at the end of the webshell code that when I copied the ASCII output was not obvious. To replicate and get the answer I took the HEX into cyberchef and then took the MD5.
 
-   ![CyberChef Hash results]({{site.baseurl}}/assets/images/posts/RA-6.png)
+   ![CyberChef Hash results](../images/posts/RA-6.png)
 
 <h5>Flag: 8a0ff044f892d72dbfb8fe9d6a395d47</h5>
 

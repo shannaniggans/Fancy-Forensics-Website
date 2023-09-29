@@ -28,7 +28,7 @@ We know from the previous section that 'Sample 2' was dropped a compiled on disk
     | sort _time 
     | table _time, c_ip, cs_uri_stem, cs_method, cs_status
     ```
-    ![File downloaded]({{site.baseurl}}/assets/images/posts/LM-1.png)
+    ![File downloaded](../images/posts/LM-1.png)
 
 * Quick Google of that directory and we see its the DFS Replication Health Report for the server.
 * The hint is in the flag hint of ABCD - DFS Replication (DFSR)

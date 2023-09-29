@@ -42,7 +42,7 @@ Log parser is another great option to parse IIS logs.
 	```
 	2021-04-01 02:35:41 10.1.0.80 GET /Install/InstallWizard.aspx __VIEWSTATE=&culture=en-US&executeinstall 80 - 13.54.35.87 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:54.0)+Gecko/20100101+Firefox/54.0 - 404 0 0 42
 	```
-    ![Filter on the known bad IP address]({{site.baseurl}}/assets/images/posts/IA-1-3.png)
+    ![Filter on the known bad IP address](../images/posts/IA-1-3.png)
 
 Their malicious 'wizardry' that failed (404 status)
 
@@ -56,7 +56,7 @@ Their malicious 'wizardry' that failed (404 status)
 	2021-04-01 02:49:08 10.1.0.80 POST /Telerik.Web.UI.WebResource.axd type=rau 80 - 13.54.35.87 python-urllib3/1.26.2 - 500 0 0 52
 	c_ip = 13.54.35.87host = dmz-webpubsource = u_ex210401.logsourcetype = iis
 	```
-    ![Attacker first successful access]({{site.baseurl}}/assets/images/posts/IA-2.png)
+    ![Attacker first successful access](../images/posts/IA-2.png)
 
 * Googling `/Telerik.Web.UI.WebResource.axd` and CVE makes it pretty clear that there are a few CVEs bouncing about, but they have asked for the most recent. 
 * Coincidentally (or not) an <a href="https://www.cyber.gov.au/acsc/view-all-content/advisories/advisory-2020-004-remote-code-execution-vulnerability-being-actively-exploited-vulnerable-versions-telerik-ui-sophisticated-actors">advisory</a> was put out by the ACSC in 2020 that has the interesting details in it.
@@ -65,7 +65,7 @@ Their malicious 'wizardry' that failed (404 status)
 
 * on a side note and maybe for later, the advisory talked about evidence of the exploit in application event logs, so I jumped in to the eventlogs to correlate.
   
-   ![Filter on the known bad IP address]({{site.baseurl}}/assets/images/posts/2022-01-21-15-45-20.png)
+   ![Filter on the known bad IP address](../images/posts/2022-01-21-15-45-20.png)
 
 **IOCs from the advisory**
 
@@ -165,13 +165,13 @@ Correlating the logs we can expect that the attacker was able to use their tool 
 
 This is where starting to build a timeline is very handy. I usually do this as a dashboard in my excel worksheet for the particular engagement.
 
-   ![Timeline in Excel]({{site.baseurl}}/assets/images/posts/IA-4-timeline.png)
+   ![Timeline in Excel](../images/posts/IA-4-timeline.png)
 
 <h5>Flag:2021-04-01 02:55:29</h5>
 
 ## Memory and TrufflePig Forensics
 Wanted to have a look at network connections and things going on related to this IP address in memory and found the following netconns:
-   ![Netconns for the actor IP in Nexus]({{site.baseurl}}/assets/images/posts/IA-nexus.png)
+   ![Netconns for the actor IP in Nexus](../images/posts/IA-nexus.png)
 
 We will be looking at those further I'm sure in subsequent questions.
 
