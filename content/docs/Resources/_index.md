@@ -4,18 +4,17 @@ weight: 20
 ---
 
 
-I am quite often asked if there are sites, training, and/or books that I would recommend to get into DFIR and of course, continue to learn. So I have created a sub-page <a href="/resources">Resources</a> with my recommendations. I will continue to update this page over time.
+I am quite often asked if there are sites, training, and/or books that I would recommend to get into DFIR and of course, continue to learn. So I have created a sub-page Resources with my recommendations. I will continue to update this page over time.
+
+Last Updated: 18 July 2022
+
+## Podcast & Blogs
+
+| [This Week in 4n6](https://thisweekin4n6.com/podcast/) | This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community. |
 
 
 
-<p>Last Updated: 18 July 2022</p>
 
-## Table of Contents
-1. [Podcasts](#Podcasts)
-2. [Communities](#Communities)
-3. [Books & Reading Materials](#Books)
-4. [Free Online Training](#FreeOnlineTraining)
-5. [Capture The Flag Competitions (Archives)](#CTFArchive)
 
 <div class="table">
   <table><tbody>
