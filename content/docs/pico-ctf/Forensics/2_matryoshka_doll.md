@@ -129,3 +129,32 @@ Remove the extra white spaces....
 {{< expand "Flag" "..." >}}
 picoCTF{bf6acf878dcbd752f4721e41b1b1b66b}
 {{< /expand >}}
+
+Alternatively you can use `unzip`
+
+```shell
+shanna@khaleesi:/mnt/c/Users/frenz/Downloads$ unzip .\dolls.jpg
+unzip:  cannot find or open .dolls.jpg, .dolls.jpg.zip or .dolls.jpg.ZIP.
+shanna@khaleesi:/mnt/c/Users/frenz/Downloads$ unzip dolls.jpg
+Archive:  dolls.jpg
+warning [dolls.jpg]:  272492 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+  inflating: base_images/2_c.jpg
+shanna@khaleesi:/mnt/c/Users/frenz/Downloads$ unzip base_images/2_c.jpg
+Archive:  base_images/2_c.jpg
+warning [base_images/2_c.jpg]:  187707 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+  inflating: base_images/3_c.jpg
+shanna@khaleesi:/mnt/c/Users/frenz/Downloads$ unzip base_images/3_c.jpg
+Archive:  base_images/3_c.jpg
+warning [base_images/3_c.jpg]:  123606 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+  inflating: base_images/4_c.jpg
+shanna@khaleesi:/mnt/c/Users/frenz/Downloads$ unzip base_images/4_c.jpg
+Archive:  base_images/4_c.jpg
+warning [base_images/4_c.jpg]:  79578 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+  inflating: flag.txt
+shanna@khaleesi:/mnt/c/Users/frenz/Downloads$ cat flag.txt
+picoCTF{bf6acf878dcbd752f4721e41b1b1b66b}
+```
