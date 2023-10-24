@@ -5,7 +5,7 @@ weight: 1
 # Information
 
 ## Description
->> Files can always be changed in a secret way. Can you find the flag?
+> Files can always be changed in a secret way. Can you find the flag?
 
 ## Method
 Given that this is an image file the first tool that I used to analyse it was Exiftool.
@@ -38,7 +38,7 @@ Current IPTC Digest             : 7a78f3d9cfb1ce42ab5a3aa30573d617
 Copyright Notice                : PicoCTF
 Application Record Version      : 4
 XMP Toolkit                     : Image::ExifTool 10.80
-License                         : ==cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9==
+License                         : <div style="background-color: #FFFF00">cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9</div>
 Rights                          : PicoCTF
 Image Width                     : 2560
 Image Height                    : 1598
