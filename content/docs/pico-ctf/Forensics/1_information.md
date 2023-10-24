@@ -54,7 +54,7 @@ Taking a look at this the "License" line looks a bit strange, and could be an en
 
 To check, I used [CyberChef](https://gchq.github.io/CyberChef)
 
-![CyberChef](../images/1_cyberchef.png)
+![CyberChef](<../../images/1_cyberchef.png>)
 
 Looks like I found the flag:
 
