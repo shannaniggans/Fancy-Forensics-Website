@@ -16,7 +16,7 @@ winget install OliverBetz.ExifTool
 
 Once Exiftool was installed I simply pulled the metadata from the file:
 
-```
+```PowerShell
 PS C:\Users\shanna\Downloads> ExifTool.exe .\cat.jpg
 ExifTool Version Number         : 12.60
 File Name                       : cat.jpg
@@ -38,7 +38,7 @@ Current IPTC Digest             : 7a78f3d9cfb1ce42ab5a3aa30573d617
 Copyright Notice                : PicoCTF
 Application Record Version      : 4
 XMP Toolkit                     : Image::ExifTool 10.80
-License                         : <div style="background-color: #FFFF00">cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9</div>
+License                         : cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9
 Rights                          : PicoCTF
 Image Width                     : 2560
 Image Height                    : 1598
@@ -50,4 +50,12 @@ Image Size                      : 2560x1598
 Megapixels                      : 4.1
 ```
 
-Taking a look at this the "License" line looks a bit strange, and could be an encoded string.
+Taking a look at this the "License" line looks a bit strange, and could be an encoded string -> `cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9`.
+
+To check, I used [CyberChef](https://gchq.github.io/CyberChef)
+
+![CyberChef](../images/1_cyberchef.png)
+
+Looks like I found the flag:
+
+`picoCTF{the_m3tadata_1s_modified}`
