@@ -28,7 +28,7 @@ So I could pretend to play along I setup an instance of ctfd locally in docker f
 
 I chose Autopsy to run the artefacts through along with some chosen python parsers to demonstrate the capabilities. You can get by in the challenge using artefact parsing tools and log tools, however I wanted to also work on updating some Autopsy plugins and decided to run the artefacts through Autopsy too and have validation for my findings.
 
-Full Autopsy setup and configuration is available <a href="/tools/2022/05/02/Autopsy.html">here</a>.
+Full Autopsy setup and configuration is available [here](https://shannaniggans.github.io/lab-setup/docs/tooling/2022-05-03-autopsy/).
 
 ## Log Review
 ### Splunk
@@ -38,29 +38,27 @@ Splunk is an extremely popular and powerful enterprise data platform. I chose Sp
 ### 1. Volatility 3
 ><a target="_blank" href="https://github.com/volatilityfoundation/volatility3">Volatility</a> is the world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibility into the runtime state of the system.
 
-Most of the tools that I use run natively on Windows, but for those maybe function better in Linux I'm leaning more towards WSL2 than a Ubuntu VM. I followed this <a target="_blank" href="https://www.youtube.com/watch?v=rwTWZ7Q5i_w">video by 13Cubed</a> to install Volatility3 and use within WSL2.
+Most of the tools that I use run natively on Windows, but for those maybe function better in Linux I'm leaning more towards WSL2 than a Ubuntu VM. I followed this [video]("https://www.youtube.com/watch?v=rwTWZ7Q5i_w") by 13Cubed to install Volatility3 and use within WSL2.
 
 **An overview of the process:**
-<ol>
-<li>Install WSL2: <a target="_blank" href="https://docs.microsoft.com/en-us/windows/wsl/install">https://docs.microsoft.com/en-us/windows/wsl/install</a></li>
-<li>From a command prompt within WSL I used the volatility wheel file to download and install the latest version of volatility3:<br>
-    1. <code>wget https://github.com/volatilityfoundation/volatility3/releases/download/v2.0.1/volatility3-2.0.1-py3-none-any.whl</code><br>
-    2. <code>python3 -m pip install volatility3-2.0.1-py3-none-any.whl</code></li>
-    <ul>
-    <li>https://github.com/volatilityfoundation/volatility3/releases</li>
-    <li>https://pip.pypa.io/en/latest/user_guide/installing-from-wheels</li>
-    </ul>
-<li>The binary <code>vol</code> was then available in <code>.local/bin/</code> from the installation directory.</li>
-</ol>
+* [Install WSL2](https://docs.microsoft.com/en-us/windows/wsl/install)
+* From a command prompt within WSL I used the volatility wheel file to download and install the latest version of volatility3:
+
+```shell
+$ wget https://github.com/volatilityfoundation/volatility3/releases/download/v2.0.1/volatility3-2.0.1-py3-none-any.whl
+$ python3 -m pip install volatility3-2.0.1-py3-none-any.whl
+```
+* https://github.com/volatilityfoundation/volatility3/releases
+* https://pip.pypa.io/en/latest/user_guide/installing-from-wheels
+
+The binary `vol` was then available in `.local/bin/` from the installation directory.
 
 ### 2. TrufflePig Nexus
 > <a target="_blank" href="https://trufflepig-forensics.com/en/product">Nexus</a> analyses Windows memory images fast and reliably with an intuitive Web-UI. It gives a comprehensive overview of artifacts, IoCs and their context which allows for an efficient triage. Trufflepig Nexus was built by practitioners to make memory forensics more efficient and easier accessible to a broader audience.
 
 I came across Trufflepig Forensics on Twitter and wanted to try out and compare the results in memory forensic challenges to Volatility so that I have my validation process, but also try out the GUI front end to make life a little easier.
-<ol>
-    <li>Download the trial version from https://trufflepig-forensics.com/</li>
-    <li>Run the install wizard and setup.</li>
-</ol>
+* Download the trial version from https://trufflepig-forensics.com/
+* Run the install wizard and setup.
 
 ## Artefact Parsing
 
