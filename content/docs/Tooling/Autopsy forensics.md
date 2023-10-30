@@ -38,6 +38,8 @@ You generally find that the biggest bottle neck with forensics is the disk speed
 
 Thank you to [Nik](https://sleuthkit.discourse.group/t/autopsy-setup-help/3258) who suggested that running two separate disk drives, one for the evidence files and one for the case directory, can greatly increase the speed of the process even when using slower drives.
 
+There is an Autopsy [Discourse](https://sleuthkit.discourse.group/) for any questions or issues you may encounter. I strongly suggest signing up and taking a look through some of the previous questions and answers.
+
 ## Running Autopsy on 4k monitors
 
 If you run Autopsy on a 4k monitor you will notice that everything is quite tiny. You can fix this by right clicking on the Autopsy icon and selecting properties, and "Change high DPI settings" to System (Enhanced).
