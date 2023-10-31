@@ -2,6 +2,7 @@
 title: "Notepad"
 weight: 50
 ---
+## Notepad
 
 > Just a sanity check... you do know how to use a computer, right?
 

@@ -2,6 +2,7 @@
 title: "Texas chainsaw massacre"
 weight: 50
 ---
+## Texas chainsaw massacre
 
 > Ugh! One of our users was trying to install a Texas Chainsaw Massacre video game, and installed malware instead. Our EDR detected a rogue process reading and writing events to the Application event log. Luckily, it killed the process and everything seems fine, but we don't know what it was doing in the event log.
 > The EVTX file is attached. Are you able to find anything malicious?

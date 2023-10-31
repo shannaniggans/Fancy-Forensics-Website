@@ -2,6 +2,7 @@
 title: "String cheese"
 weight: 50
 ---
+## String cheese
 
 > Oh, a cheese stick! This was my favorite snack as a kid. My mom always called it by a different name though...
 

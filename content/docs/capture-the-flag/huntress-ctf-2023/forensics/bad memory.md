@@ -1,13 +1,12 @@
 ---
-title: "Dumpster fire"
+title: "Bad memory"
 weight: 50
 ---
+## Bad memory
 
 > A user came to us and said they forgot their password. Can you recover it? The flag is the MD5 hash of the recovered password wrapped in the proper flag format.
 
 * Download the file and extract it and you get `image.bin`
-
-
 
     ```shell
     shanna@ubuntu:~/volatility3$ python3 vol.py -f ../Downloads/image.bin windows.info

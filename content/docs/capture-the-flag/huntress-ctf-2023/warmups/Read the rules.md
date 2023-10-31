@@ -2,6 +2,7 @@
 title: "Read the rules"
 weight: 50
 ---
+## Read the rules
 
 > Please follow the rules for this CTF!
 
