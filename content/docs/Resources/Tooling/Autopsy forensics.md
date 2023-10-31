@@ -15,15 +15,7 @@ This is my set up and instructions for running Autopsy in a test environment for
 
 Last Update: 26 October 2023.
 
-## Table of Contents
-1. [My Base System](#MyBaseSystem)
-2. [Install Autopsy](#InstallAutopsy)
-3. [Autopsy Options](#AutopsyOptions)
-4. [Turn on WAL Journaling](#WalJournaling)
-5. [Python Plugins](#PythonPlugins)
-   * [ParseEvtx](#Parse_Evtx)
-
-## Download and install the latest version of Autopsy <a name ="InstallAutopsy"></a>
+## Download and install the latest version of Autopsy 
 
 Autopsy doesn't upgrade, it installs the next version alongside the old one. Remove the older version when you are happy the new version is working for you. This can be handy to test if there is a problem.
 
@@ -48,7 +40,7 @@ While you are there I recommend selecting "Run this program as an administrator"
 
 ![](https://s3.us-west-2.amazonaws.com/content.podia.com/7eeotu3vc33ur8b01id1lkb979yz)
 
-## Autopsy Options <a name ="AutopsyOptions"></a>
+## Autopsy Options 
 Open Autopsy and then go to Tools > Options.
 1. Applications
    * You can increase the Maximum JVM Memory for your system. I have 34GB available and set the Maximum to 14GB.
@@ -56,7 +48,7 @@ Open Autopsy and then go to Tools > Options.
    * When displaying times - I set this to GMT
    * Maximum number of Results to show in table - This is essentially pagination (how many results per page in the results table). I like to scroll so I set this to zero.
 
-## Turn on Wal journaling to speed up Single Case Mode <a name ="WalJournaling"></a>
+## Turn on Wal journaling to speed up Single Case Mode 
 
 This is a tip that [Mark McKinnon](https://github.com/markmckinnon) shared with me:
 * Download an SQLite database editor. SQLite Spy for example.
@@ -70,7 +62,7 @@ This is a tip that [Mark McKinnon](https://github.com/markmckinnon) shared with 
 * Close the database and close your SQLite editor.
 * Open the case that you just created and add your data sources as normal.
 
-## Adding Python Plugins <a name ="PythonPlugins"></a>
+## Adding Python Plugins 
 
 These plugins greatly increase the number of ingest parsers that can run by Autopsy: [https://github.com/markmckinnon/Autopsy-Plugins](https://github.com/markmckinnon/Autopsy-Plugins). 
 
@@ -84,13 +76,13 @@ These plugins greatly increase the number of ingest parsers that can run by Auto
 
 You should see the plugin folder directly in the python_modules folder as shown above.
 
-### Running ParseEvtx Python Ingest Module <a name ="Parse_Evtx"></a>
+### Running ParseEvtx Python Ingest Module 
 <ul>
    * If you add the name of an event log under other, you must add the name and THEN check the other box. To be sure I check it on then off and then on again. Separate the names with a comma.</ul>
 
-   ![ParseEVTX](./images/Autopsy_parse_evtx_other.png)
+   ![ParseEVTX](../images/Autopsy_parse_evtx_other.png)
 
 <ul>
    * You know it's worked when you get the logs in Autopsy OR you check the log file and the list of names appears next to "Other".</ul>
    
-   ![Autopsy logs](./images/2022-04-01-05-08-51.png)
+   ![Autopsy logs](../images/2022-04-01-05-08-51.png)
