@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 20
-title: ACSC IR Challenge
+weight: 2
+title: 2021 ACSC IR Challenge
 ---

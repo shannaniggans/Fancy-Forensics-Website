@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 20
-title: Pico CTF
+weight: 1
+title: picoGym Practice Challenges
 ---

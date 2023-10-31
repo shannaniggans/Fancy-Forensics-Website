@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
 weight: 20
-title: Huntress CTF 2023
+title: 2023 Huntress CTF 2023
 ---
