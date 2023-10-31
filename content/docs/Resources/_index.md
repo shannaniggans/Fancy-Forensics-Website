@@ -20,41 +20,21 @@ Last Updated: 18 July 2022
     
 ## Communities
 
-| Name | Description |
-|------|-------------|
-    
-    
- 
-    <th colspan="2"><h2>Communities<a target="_blank" name ="Communities"></a></h2></th>
-    <tr> 
-      <td><h4><a target="_blank" href="https://discord.com/invite/crH7RQeJZz">ComfyCon Discord</a></h4></td>
-      <td>ComfyCon AU was originally constructed as a conference in March 2020 as a response to the cancellation of Cyber Security conferences due to the COVID-19 pandemic.</td>
-    </tr>
-    <tr> 
-      <td><h4><a target="_blank" href="https://discord.gg/digitalforensics">Digital Forensics Discord</a></h4></td>
-      <td>A Discord server ran by and for the DFIR Community!</td>
-    </tr>
-
+| Communities                                      | Description                                                                                                     |
+|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| [ComfyCon Discord](https://discord.com/invite/crH7RQeJZz) | ComfyCon AU was originally constructed as a conference in March 2020 as a response to the cancellation of Cyber Security conferences due to the COVID-19 pandemic. |
+| [Digital Forensics Discord](https://discord.gg/digitalforensics)  | A Discord server ran by and for the DFIR Community!                                                          |
 
 ## Books & reading materials
 
 | Name | Description |
 |------|-------------|
 
-
-  <th colspan="2"><h2>Books & Reading Materials<a target="_blank" name ="Books"></a></h2></th>
-  <tr><td colspan="2"><h3>Industry Reports</h3></td></tr>
-    <tr> 
-        <td><h4><a target="_blank" href="https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8354-draft.pdf">Digital Investigation Techniques: A NIST Scientific Foundation Review</a></h4></td>
-      <td>This document is an assessment of the scientific foundations of digital forensics. We examined descriptions of digital investigation techniques from peer-reviewed sources, academic and classroom materials, technical guidance from professional organizations, and independently published sources.</td>
-    </tr>    <tr> 
-        <td><h4><a target="_blank" href="https://www.verizon.com/business/en-au/resources/reports/dbir/)">Verizon DBIR</a></h4></td>
-      <td>Verizon's Data Breach Investigations Report (DBIR) provides an annual analysis of security incidents and data breaches. The information and analysis are categorized by sector. Public sector organizations are key contributors to the report each year.</td>
-    </tr>
-    <tr> 
-        <td><h4><a target="_blank" href="https://www.mandiant.com/sites/default/files/2021-09/mandiant-apt1-report.pdf">Mandiant APT1 Report</a></h4></td>
-      <td>APT1 is one of dozens of threat groups Mandiant tracks around the world and we consider it to be one of the most prolific in terms of the sheer quantity of information it has stolen.</td>
-    </tr>
+| **Industry Reports** | |
+|---|---|
+| [Digital Investigation Techniques: A NIST Scientific Foundation Review](https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8354-draft.pdf) | This document is an assessment of the scientific foundations of digital forensics. We examined descriptions of digital investigation techniques from peer-reviewed sources, academic and classroom materials, technical guidance from professional organizations, and independently published sources. |
+| [Verizon DBIR](https://www.verizon.com/business/en-au/resources/reports/dbir/) | Verizon's Data Breach Investigations Report (DBIR) provides an annual analysis of security incidents and data breaches. The information and analysis are categorized by sector. Public sector organizations are key contributors to the report each year. |
+| [Mandiant APT1 Report](https://www.mandiant.com/sites/default/files/2021-09/mandiant-apt1-report.pdf) | APT1 is one of dozens of threat groups Mandiant tracks around the world, and we consider it to be one of the most prolific in terms of the sheer quantity of information it has stolen. |
 
 ## "Text" books
 
