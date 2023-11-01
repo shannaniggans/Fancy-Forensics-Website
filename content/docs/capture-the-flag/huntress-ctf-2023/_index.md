@@ -22,7 +22,7 @@ Below are some links and also the tools that I used to complete the challenges, 
 ### Forensics challenges
 * **Tragedy (easy)**
   * N/A
-* [**Opposable Thumbs (easy)**](./opposable-thumbs/)
+* [**Opposable Thumbs (easy)**](forensics/opposable-thumbs/)
   * [xxd](https://linux.die.net/man/1/xxd)
   * [Thumbcache viewer](https://thumbcacheviewer.github.io/)
 * **Dumpster Fire (easy)**
