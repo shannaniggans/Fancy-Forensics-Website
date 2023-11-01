@@ -20,9 +20,9 @@ $ xxd -l 0x30 thumbcache_256.db
 00000020: 9232 2456 e5e5 8fb9 2000 0000 0000 0000  .2$V.... .......
 ```
 
-The video below by 13Cubed on YouTube talks about the tool [Thumbcache viewer](https://thumbcacheviewer.github.io/){:target="_blank"} which can be used to analyse the contents of the db file. Opening the db file with Thumbcache viewer looks like this:
+The video below by 13Cubed on YouTube talks about the tool [Thumbcache viewer](https://thumbcacheviewer.github.io/) which can be used to analyse the contents of the db file. Opening the db file with Thumbcache viewer looks like this:
 
-![Thumbcache Viewer](../forensics/images/thumbcacheviewer.png)
+![Thumbcache Viewer](../../images/thumbcacheviewer.png)
 
 I noticed that there was five 'png' files and selected them and saved them locally. Opening the files revealed the flag in the image file `3fa8aafdd63e1168.jpg`.
 
