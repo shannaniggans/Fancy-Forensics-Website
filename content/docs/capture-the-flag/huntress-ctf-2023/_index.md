@@ -21,25 +21,24 @@ Any write ups for challenges not on that list I did after the challenge had fini
 Below are some links and also the tools that I used to complete the challenges, mainly so that I have a place to come and remember!
 
 ### Forensics challenges
-* **Tragedy (easy)**
-  * N/A
+
 * [**Opposable Thumbs (easy)**](forensics/opposable-thumbs/)
   * [xxd](https://linux.die.net/man/1/xxd)
   * [Thumbcache viewer](https://thumbcacheviewer.github.io/)
-* **Dumpster Fire (easy)**
+* **Dumpster Fire (easy)**(forensics/opposable-thumbs/)
   * [Firefox decrypt](https://github.com/unode/firefox_decrypt)
   * [Firepwd](https://github.com/lclevy/firepwd)
-* **Wimble (easy)**
+* [**Wimble (easy)**](forensics/wimble/)
   * PECmd.exe - [EZTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
-* **Traffic (medium)**
+* [**Traffic (medium)**](forensics/traffic/)
   * [rita](https://github.com/activecm/rita)
 * **Tragedy Redux (medium)**
-* **Rogue Inbox (medium)**
+* [**Rogue Inbox (medium)**](forensics/rogue-inbox/)
   * Timeline explorer - [EZTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
-* **Bad Memory (medium)**
+* [**Bad Memory (medium)**](forensics/bad-memory/)
   * [Volatility3](https://github.com/volatilityfoundation/volatility3)
   * [HashCat](https://hashcat.net/hashcat/)
-* **Texas chainsaw Massacre: Tokyo Drift (hard)**
+* [**Texas chainsaw Massacre: Tokyo Drift (hard)**](forensics/texas-chainsaw-massacre/)
   * [Chainsaw](https://github.com/WithSecureLabs/chainsaw)
   * [CyberChef](https://gchq.github.io/CyberChef/)
 
@@ -74,7 +73,7 @@ Below are some links and also the tools that I used to complete the challenges, 
 
 
 - **Thumb Drive**
-  - Points: 50
+
 
 
 
