@@ -1,6 +1,6 @@
 ---
 title: "Texas chainsaw massacre"
-weight: 50
+weight: 8
 ---
 ## Texas chainsaw massacre
 

@@ -1,6 +1,6 @@
 ---
 title: "Rogue Inbox"
-weight: 50
+weight: 6
 ---
 ## Rogue inbox
 

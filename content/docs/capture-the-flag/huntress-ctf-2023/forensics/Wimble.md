@@ -1,6 +1,6 @@
 ---
 title: "Wimble"
-weight: 50
+weight: 3
 ---
 ## Wimble
 

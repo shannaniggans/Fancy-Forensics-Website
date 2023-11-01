@@ -1,6 +1,6 @@
 ---
 title: "Bad memory"
-weight: 50
+weight: 7
 ---
 ## Bad memory
 

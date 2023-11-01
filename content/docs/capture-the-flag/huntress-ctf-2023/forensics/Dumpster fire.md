@@ -1,6 +1,6 @@
 ---
 title: "Dumpster fire"
-weight: 50
+weight: 2
 ---
 ## Dumpster fire
 

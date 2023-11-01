@@ -31,7 +31,7 @@ Texas chainsaw Massacre: Tokyo Drift (hard)
 
 
 
-## Additional write up pages:
+## Additional write-ups
 The following people have written up their versions of the challenges, an incomplete list here:
 
 * https://github.com/ThisGuyNeedsABeer/Huntress-CTF-2023/

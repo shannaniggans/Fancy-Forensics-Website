@@ -1,6 +1,6 @@
 ---
 title: "Opposable thumbs"
-weight: 50
+weight: 1
 ---
 ## Opposable thumbs
 
