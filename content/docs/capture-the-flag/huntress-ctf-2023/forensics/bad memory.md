@@ -50,7 +50,7 @@ weight: 50
 So now I needed to switch to my Windows host to run HashCat on the GPU.
 
     ```
-    .\hashcat.exe -m 1000 31d6cfe0d16ae931b73c59d7e0c089c0 .\rockyou.txt
+    .\hashcat.exe -m 1000 ab395607d3779239b83eed9906b4fb92 .\rockyou.txt
 
     Dictionary cache built:
     * Filename..: .\rockyou.txt
@@ -81,7 +81,7 @@ So now I needed to switch to my Windows host to run HashCat on the GPU.
     Hardware.Mon.#1..: Temp: 55c Fan:  0% Util: 24% Core:1807MHz Mem:7300MHz Bus:8
     ```
 
-Back to linux to create the MD5 of the recovered password to submit the flag.
+Back to Linux to create the MD5 of the recovered password to submit the flag.
     ```shell
     echo -n 'goldfish#' | md5sum
     ```
