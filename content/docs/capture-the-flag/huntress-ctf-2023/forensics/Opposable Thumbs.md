@@ -25,9 +25,9 @@ The video below by 13Cubed on YouTube talks about the tool [Thumbcache viewer](h
 
 I noticed that there was five 'png' files and selected them and saved them locally. Opening the files revealed the flag in the image file `3fa8aafdd63e1168.jpg`.
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 flag{human_after_all}
-{{< /expand >}}
+{{< /details >}}
 
 ## References and resources
 * Two Thumbs Up - Thumbnail Forensics - 13Cubed episode - https://youtu.be/5efCp1VXhfQ?si=lIr84jihPb4taeLn
