@@ -126,9 +126,9 @@ Opening flag.txt gets me:
 
 Remove the extra white spaces....
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 picoCTF{bf6acf878dcbd752f4721e41b1b1b66b}
-{{< /expand >}}
+{{< /details >}}
 
 Alternatively you can use `unzip`
 

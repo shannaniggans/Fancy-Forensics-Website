@@ -58,6 +58,6 @@ To check, I used [CyberChef](https://gchq.github.io/CyberChef)
 
 Looks like I found the flag:
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 picoCTF{the_m3tadata_1s_modified}
-{{< /expand >}}
+{{< /details >}}

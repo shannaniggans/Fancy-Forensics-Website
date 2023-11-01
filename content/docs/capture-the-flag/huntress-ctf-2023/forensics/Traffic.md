@@ -118,9 +118,9 @@ Going through the tabs and remembering "sketchy site" as a clue from the descrip
 
 Go to that site and get the flag.
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 flag{8626fe7dcd8d412a80d0b3f0e36afd4a}
-{{< /expand >}}
+{{< /details >}}
 
 # Resources
 * Handy to watch the install process - https://youtu.be/mpCBOQSjbOA?si=ZgVXn1wZaWzjRZKz&t=985

@@ -90,7 +90,7 @@ Once that was completed I used the EZTools `Timeline explorer` to open the outpu
 
 Dropped it into Notepad++ and the searched for "flag".
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 flag{97f33c9783c21df85d79d613b0b258bd}
-{{< /expand >}}
+{{< /details >}}
 

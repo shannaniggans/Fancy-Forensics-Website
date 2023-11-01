@@ -182,7 +182,7 @@ flag{93671c2c38ee872508770361ace37b02}
 
 Connection closed by foreign host.
 ```
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 flag{93671c2c38ee872508770361ace37b02}
-{{< /expand >}}
+{{< /details >}}
 

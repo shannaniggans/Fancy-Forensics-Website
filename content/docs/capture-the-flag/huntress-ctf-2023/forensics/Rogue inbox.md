@@ -18,6 +18,6 @@ The next bit I found just by looking and seeing a distinct pattern ....
 
 From there is transposed out the flag.
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 flag{24c4230fa7d50eef392b2c850f74b0f6}
-{{< /expand >}}
+{{< /details >}}

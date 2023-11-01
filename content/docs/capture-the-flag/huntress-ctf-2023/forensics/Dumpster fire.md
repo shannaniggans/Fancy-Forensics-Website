@@ -44,9 +44,9 @@ python3 firepwd.py -d ../dumpster_fire/home/challenge/.mozilla/firefox/bc1m1zlr.
 
 Both tools worked to get me the flag.
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 flag{35446041dc161cf5c9c325a3d28af3e3}
-{{< /expand >}}
+{{< /details >}}
 
 # Resources:
 * Firefox decrypt - https://github.com/unode/firefox_decrypt

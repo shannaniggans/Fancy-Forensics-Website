@@ -8,6 +8,6 @@ weight: 50
 
 ![Read the rules](../images/read_the_rules.png)
 
-{{< expand "Flag" ">" >}}
+{{< details "Flag" ">" >}}
 flag{90bc54705794a62015369fd8e86e557b}
-{{< /expand >}}
+{{< /details >}}
