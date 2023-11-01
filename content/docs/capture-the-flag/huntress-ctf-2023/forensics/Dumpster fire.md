@@ -2,9 +2,11 @@
 title: "Dumpster fire"
 weight: 2
 ---
-## Dumpster fire
+# Dumpster fire
 
+> "
 > We found all this data in the dumpster! Can you find anything interesting in here, like any cool passwords or anything? Check it out quick before the foxes get to it!
+> "
 
 Many clues here to lead us to this being a Firefox challenge and we are looking for passwords. Reviewing the directory structure, we can see `logins.json`. Firefox store passwords, encrypted, in this JSON text file, let's take a look:
 
