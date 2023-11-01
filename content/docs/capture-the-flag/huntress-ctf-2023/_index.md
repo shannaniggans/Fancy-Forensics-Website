@@ -72,6 +72,7 @@ Below are some links and also the tools that I used to complete the challenges, 
   - [PEStudio](https://www.winitor.com/download)
   - [FLOSS]()
   - [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor.git)
+  - [decompyle++](https://github.com/zrax/pycdc)
 
 - **Hot Off The Press (medium)**
 
