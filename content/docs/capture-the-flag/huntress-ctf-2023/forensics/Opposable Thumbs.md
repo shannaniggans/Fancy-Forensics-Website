@@ -4,9 +4,9 @@ weight: 1
 ---
 # Opposable thumbs
 
-> "
+> "  
 > We uncovered a database. Perhaps the flag is right between your fingertips!
-> "
+>   "
 
 Various computer operating systems include the ability to view picture and other files within a folder as smaller thumbnail images, representative of the file contents. In Microsoft Windows, this was introduced in Windows 95B and is enabled by storing thumbnail images in system container files, such as
 Thumbs.db, or later; Thumbcache.db files. These, and other system files, store a range of information such as the original filename, and dates and times.
