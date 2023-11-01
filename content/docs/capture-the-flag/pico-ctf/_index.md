@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
 weight: 1
-title: picoGym Practice Challenges
+title: "[CTF] picoGym Practice Challenges"
 ---
