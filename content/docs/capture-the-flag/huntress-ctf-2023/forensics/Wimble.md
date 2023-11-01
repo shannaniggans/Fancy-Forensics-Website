@@ -86,7 +86,7 @@ Once that was completed I used the EZTools `Timeline explorer` to open the outpu
 
 ![Searched Timeline explorer for flag](../../images/wimble_1.png)
 
-![Copied the text from the "Files Loaded" column](../images/wimble_2.png)
+![Copied the text from the "Files Loaded column](../images/wimble_2.png)
 
 Dropped it into Notepad++ and the searched for "flag".
 

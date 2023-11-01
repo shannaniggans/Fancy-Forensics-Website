@@ -25,7 +25,7 @@ Below are some links and also the tools that I used to complete the challenges, 
 * [**Opposable Thumbs (easy)**](forensics/opposable-thumbs/)
   * [xxd](https://linux.die.net/man/1/xxd)
   * [Thumbcache viewer](https://thumbcacheviewer.github.io/)
-* **Dumpster Fire (easy)**(forensics/opposable-thumbs/)
+* [**Dumpster Fire (easy)**](forensics/dumpster-fire/)
   * [Firefox decrypt](https://github.com/unode/firefox_decrypt)
   * [Firepwd](https://github.com/lclevy/firepwd)
 * [**Wimble (easy)**](forensics/wimble/)
@@ -62,7 +62,16 @@ Below are some links and also the tools that I used to complete the challenges, 
 
 - **Zerion (medium)**
 
-- **Snake Oil (medium)**
+- [**Thumb Drive (medium)**](malware/thumbdrive)
+  - LECmd.exe - [EZTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
+  * [CyberChef](https://gchq.github.io/CyberChef/)
+  * [CAPA](https://github.com/mandiant/capa)
+  * [dnSpy](https://github.com/dnSpy/dnSpy)
+
+- [**Snake Oil (medium)**](malware/snakeoil)
+  - [PEStudio](https://www.winitor.com/download)
+  - [FLOSS]()
+  - [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor.git)
 
 - **Hot Off The Press (medium)**
 
@@ -72,7 +81,6 @@ Below are some links and also the tools that I used to complete the challenges, 
 
 
 
-- **Thumb Drive**
 
 
 
