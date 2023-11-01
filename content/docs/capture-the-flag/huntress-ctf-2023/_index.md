@@ -20,30 +20,61 @@ Any write ups for challenges not on that list I did after the challenge had fini
 Below are some links and also the tools that I used to complete the challenges, mainly so that I have a place to come and remember!
 
 ### Forensics challenges
-* Tragedy (easy)
+* **Tragedy (easy)**
   * N/A
-* Opposable Thumbs (easy)
+* [**Opposable Thumbs (easy)**](./opposable-thumbs/)
   * [xxd](https://linux.die.net/man/1/xxd)
   * [Thumbcache viewer](https://thumbcacheviewer.github.io/)
-* Dumpster Fire (easy)
+* **Dumpster Fire (easy)**
   * [Firefox decrypt](https://github.com/unode/firefox_decrypt)
   * [Firepwd](https://github.com/lclevy/firepwd)
-* Wimble (easy)
+* **Wimble (easy)**
   * PECmd.exe - [EZTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
-* Traffic (medium)
+* **Traffic (medium)**
   * [rita](https://github.com/activecm/rita)
-* Tragedy Redux (medium)
-* Rogue Inbox (medium)
+* **Tragedy Redux (medium)**
+* **Rogue Inbox (medium)**
   * Timeline explorer - [EZTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
-* Bad Memory (medium)
+* **Bad Memory (medium)**
   * [Volatility3](https://github.com/volatilityfoundation/volatility3)
   * [HashCat](https://hashcat.net/hashcat/)
-* Texas chainsaw Massacre: Tokyo Drift (hard)
+* **Texas chainsaw Massacre: Tokyo Drift (hard)**
   * [Chainsaw](https://github.com/WithSecureLabs/chainsaw)
   * [CyberChef](https://gchq.github.io/CyberChef/)
 
 ## Malware challenges
-* 
+- **VeeBeeEee (easy)**
+- **HumanTwo (easy)**
+- **Snake Eater (easy)**
+- **BlackCat (easy)**
+
+- **PHP Stager (easy)**
+
+- **RAT (medium)**
+
+- **Opendir (medium)**
+
+- **Batchfuscation (medium)**
+
+- **Speakfriend (medium)**
+
+- **Snake Eater II (medium)**
+
+- **Zerion (medium)**
+
+- **Snake Oil (medium)**
+
+- **Hot Off The Press (medium)**
+
+- **BlackCat II (hard)**
+
+- **Crab Rave (hard)**
+
+
+
+- **Thumb Drive**
+  - Points: 50
+
 
 
 
