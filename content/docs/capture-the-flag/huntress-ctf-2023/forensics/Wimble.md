@@ -4,9 +4,8 @@ weight: 3
 ---
 # Wimble
 
-> "
+> Challenge:  
 > "Gretchen, stop trying to make fetch happen! It's not going to happen!" - Regina George, Mean Girls
-> "
 
 I have generally started out by checking each file it is what it claims to be and yes this was a 7zip file. So first step was unzipping the containing files.
 

@@ -4,11 +4,12 @@ weight: 7
 ---
 ## Bad memory
 
+> Challenge:  
 > A user came to us and said they forgot their password. Can you recover it? The flag is the MD5 hash of the recovered password wrapped in the proper flag format.
 
 * Download the file and extract it and you get `image.bin`
 
-    ```shell
+    ```
     shanna@ubuntu:~/volatility3$ python3 vol.py -f ../Downloads/image.bin windows.info
     Volatility 3 Framework 2.5.2
     Progress:  100.00		PDB scanning finished                                                                                              
@@ -49,37 +50,37 @@ weight: 7
 
 So now I needed to switch to my Windows host to run HashCat on the GPU.
 
-    ```
-    .\hashcat.exe -m 1000 ab395607d3779239b83eed9906b4fb92 .\rockyou.txt
+```
+.\hashcat.exe -m 1000 ab395607d3779239b83eed9906b4fb92 .\rockyou.txt
 
-    Dictionary cache built:
-    * Filename..: .\rockyou.txt
-    * Passwords.: 14344391
-    * Bytes.....: 139921497
-    * Keyspace..: 14344384
-    * Runtime...: 1 sec
+Dictionary cache built:
+* Filename..: .\rockyou.txt
+* Passwords.: 14344391
+* Bytes.....: 139921497
+* Keyspace..: 14344384
+* Runtime...: 1 sec
 
-    ab395607d3779239b83eed9906b4fb92:goldfish#
+ab395607d3779239b83eed9906b4fb92:goldfish#
 
-    Session..........: hashcat
-    Status...........: Cracked
-    Hash.Mode........: 1000 (NTLM)
-    Hash.Target......: ab395607d3779239b83eed9906b4fb92
-    Time.Started.....: Mon Oct 30 18:50:01 2023 (0 secs)
-    Time.Estimated...: Mon Oct 30 18:50:01 2023 (0 secs)
-    Kernel.Feature...: Pure Kernel
-    Guess.Base.......: File (.\rockyou.txt)
-    Guess.Queue......: 1/1 (100.00%)
-    Speed.#1.........: 26220.5 kH/s (3.06ms) @ Accel:2048 Loops:1 Thr:32 Vec:1
-    Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
-    Progress.........: 9175040/14344384 (63.96%)
-    Rejected.........: 0/9175040 (0.00%)
-    Restore.Point....: 7340032/14344384 (51.17%)
-    Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
-    Candidate.Engine.: Device Generator
-    Candidates.#1....: ina&alessandro -> chautla
-    Hardware.Mon.#1..: Temp: 55c Fan:  0% Util: 24% Core:1807MHz Mem:7300MHz Bus:8
-    ```
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 1000 (NTLM)
+Hash.Target......: ab395607d3779239b83eed9906b4fb92
+Time.Started.....: Mon Oct 30 18:50:01 2023 (0 secs)
+Time.Estimated...: Mon Oct 30 18:50:01 2023 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (.\rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........: 26220.5 kH/s (3.06ms) @ Accel:2048 Loops:1 Thr:32 Vec:1
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 9175040/14344384 (63.96%)
+Rejected.........: 0/9175040 (0.00%)
+Restore.Point....: 7340032/14344384 (51.17%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: ina&alessandro -> chautla
+Hardware.Mon.#1..: Temp: 55c Fan:  0% Util: 24% Core:1807MHz Mem:7300MHz Bus:8
+```
 
 Back to Linux to create the MD5 of the recovered password to submit the flag.
     ```shell

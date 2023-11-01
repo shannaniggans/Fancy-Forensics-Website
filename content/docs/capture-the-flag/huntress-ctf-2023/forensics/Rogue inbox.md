@@ -4,10 +4,9 @@ weight: 6
 ---
 # Rogue inbox
 
-> "
+> Challenge:  
 > You've been asked to audit the Microsoft 365 activity for a recently onboarded as a customer of your MSP.
 > Your new customer is afraid that Debra was compromised. We received logs exported from Purview... can you figure out what the threat actor did? It might take some clever log-fu!
-> "
 
 I grabbed the csv file and opened in Timeline explorer (EZTools), I know we were interested in Debra and their inbox had funky things like new rules added. So I filtered the User Id column to contain `debra`.
 
