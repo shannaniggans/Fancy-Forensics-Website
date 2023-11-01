@@ -30,9 +30,3 @@ paginate = 10
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
   BookSection = 'docs'
-
-# footer menu
-[footer]
-name = "About"
-url = "/"
-weight = 1
