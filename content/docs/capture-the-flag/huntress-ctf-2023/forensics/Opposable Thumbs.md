@@ -2,7 +2,7 @@
 title: "Opposable thumbs"
 weight: 1
 ---
-## Opposable thumbs
+# Opposable thumbs
 
 > We uncovered a database. Perhaps the flag is right between your fingertips!
 
@@ -20,7 +20,7 @@ $ xxd -l 0x30 thumbcache_256.db
 
 The video below by 13Cubed on YouTube talks about the tool [Thumbcache viewer](https://thumbcacheviewer.github.io/){:target="_blank"} which can be used to analyse the contents of the db file. Opening the db file with Thumbcache viewer looks like this:
 
-![Thumbcache Viewer](../images/thumbcacheviewer.png)
+![Thumbcache Viewer](../images/images/thumbcacheviewer.png)
 
 I noticed that there was five 'png' files and selected them and saved them locally. Opening the files revealed the flag in the image file `3fa8aafdd63e1168.jpg`.
 
@@ -28,6 +28,6 @@ I noticed that there was five 'png' files and selected them and saved them local
 flag{human_after_all}
 {{< /expand >}}
 
-# References and resources
+## References and resources
 * Two Thumbs Up - Thumbnail Forensics - 13Cubed episode - https://youtu.be/5efCp1VXhfQ?si=lIr84jihPb4taeLn
 * Forensic Analysis of Windows Thumbcache files - http://www.csc.villanova.edu/~dprice/extra_handouts/Forensic_Analysis_of_Windows_Thumbcache_files.pdf

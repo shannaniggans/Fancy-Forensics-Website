@@ -22,8 +22,7 @@ Below are some links and also the tools that I used to complete the challenges, 
   * N/A
 * Opposable Thumbs (easy)
   * xxd
-  * [Thumbcache viewer](https://thumbcacheviewer.github.io/){:target="_blank"}
-  * <a href="https://thumbcacheviewer.github.io/" target="_blank">Thumbcache viewer</a>
+  * [Thumbcache viewer](https://thumbcacheviewer.github.io/)
 
 Dumpster Fire (easy)
 Wimble (easy)
