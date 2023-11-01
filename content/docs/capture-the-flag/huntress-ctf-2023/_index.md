@@ -5,7 +5,17 @@ title: 2023 Huntress CTF 2023
 ---
 
 
-
+## Forensics challenges
+Tragedy (easy)
+Opposable Thumbs (easy)
+Dumpster Fire (easy)
+Wimble (easy)
+Traffic (medium)
+Tragedy Redux (medium)
+Rogue Inbox (medium)
+Backdoored Splunk (medium)
+Bad Memory (medium)
+Texas chainsaw Massacre: Tokyo Drift (hard)
 
 
 
