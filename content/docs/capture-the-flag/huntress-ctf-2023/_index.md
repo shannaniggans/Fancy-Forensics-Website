@@ -1,7 +1,7 @@
 ---
 bookCollapseSection: true
 weight: 20
-title: 2023 Huntress CTF 2023
+title: [CTF] 2023 Huntress CTF 2023
 ---
 # Huntress CTF 2023
 In October 2023, Huntress ran a [CTF](https://huntress.ctf.games/) to coincide with Cybersecurity awareness month. The competition ran from October 2, 12:00 PM ET - October 31, 11:59 PM ET, with new challenges released every day.
