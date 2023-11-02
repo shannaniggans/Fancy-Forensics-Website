@@ -88,6 +88,8 @@ Below are some links and also the tools that I used to complete the challenges, 
 
 
 ## Additional write-ups
+The 'official' writeups by HuskyHacks: https://www.youtube.com/playlist?list=PLta338B2b1DXCbwzGzG5XkEQAaZhlwtbJ
+
 The following people have written up their versions of the challenges, an incomplete list here:
 
 * https://github.com/ThisGuyNeedsABeer/Huntress-CTF-2023/
@@ -95,6 +97,4 @@ The following people have written up their versions of the challenges, an incomp
 * https://jjolley91.github.io/blog/huntress_ctf_2023/
 * https://imported-variraptor-cc6.notion.site/Huntress-CTF-2-Oct-31-Oct-2023-9b810f83c0294d9d9151142364bbb63a
 * https://github.com/ChaiChengXun2/Huntress-CTF
-
-## Recommended resources
 
