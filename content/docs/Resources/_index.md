@@ -6,7 +6,7 @@ weight: 200
 
 I am quite often asked if there are sites, training, and/or books that I would recommend to get into DFIR and of course, continue to learn. So I have created a sub-page Resources with my recommendations. I will continue to update this page over time.
 
-Last Updated: 18 July 2022
+Last Updated: 3 November 2023
 
 ## Podcast & Blogs
 
@@ -34,22 +34,13 @@ Last Updated: 18 July 2022
 | [Verizon DBIR](https://www.verizon.com/business/en-au/resources/reports/dbir/) | Verizon's Data Breach Investigations Report (DBIR) provides an annual analysis of security incidents and data breaches. The information and analysis are categorized by sector. Public sector organizations are key contributors to the report each year. |
 | [Mandiant APT1 Report](https://www.mandiant.com/sites/default/files/2021-09/mandiant-apt1-report.pdf) | APT1 is one of dozens of threat groups Mandiant tracks around the world, and we consider it to be one of the most prolific in terms of the sheer quantity of information it has stolen. |
 
-## "Text" books
+## Must have books
 
 | Book                                                      | Description                                                                                                  |
 |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [Digital Forensics with Open Source Tools](https://www.amazon.com.au/gp/product/B004W7DO78/ref=ppx_yo_dt_b_d_asin_title_o00?ie=UTF8&psc=1) | Digital Forensics with Open Source Tools is the definitive book on investigating and analyzing computer systems and media using open source tools. The book is a technical procedural guide, and explains the use of open source tools on Mac, Linux, and Windows systems as a platform for performing computer forensics. |
+| [Digital Forensics with Open Source Tools](https://www.amazon.com.au/gp/product/B004W7DO78/ref=ppx_yo_dt_b_d_asin_title_o00?ie=UTF8&psc=1) | Digital Forensics with Open Source Tools is the definitive book on investigating and analysing computer systems and media using open source tools. The book is a technical procedural guide, and explains the use of open source tools on Mac, Linux, and Windows systems as a platform for performing computer forensics. |
 | [File System Forensic Analysis](https://www.amazon.com.au/gp/product/B016N80EZ8/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0) | Most digital evidence is stored within the computer's file system, but understanding how file systems work is one of the most technically challenging concepts for a digital investigator because there exists little documentation. Now, security expert Brian Carrier has written the definitive reference for everyone who wants to understand and be able to testify about how file system analysis is performed. |
 | [The Art of Memory Forensics](https://www.amazon.com.au/Art-Memory-Forensics-Detecting-Malware/dp/1118825098/ref=asc_df_1118825098) | Memory forensics is the art of analyzing computer memory (RAM) to solve digital crimes. As a follow-up to the best seller Malware Analyst's Cookbook, experts in the fields of malware, security, and digital forensics bring you a step-by-step guide to memory forensics―now the most sought after skill in the digital forensics and incident response fields. |
-
-
-## Other books
-
-| Book | Description |
-|------|-------------|
-| [The Hacker and The State](https://read.amazon.com.au/kp/embed?asin=B082DLMC6L&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_GJXQM5K5JS1ZMTW9FXA1) | Packed with insider information based on interviews, declassified files, and forensic analysis of company reports, The Hacker and the State sets aside fantasies of cyber-annihilation to explore the real geopolitical competition of the digital age. Tracing the conflict of wills and interests among modern nations, Ben Buchanan reveals little-known details of how China, Russia, North Korea, Britain, and the United States hack one another in a relentless struggle for dominance. His analysis moves deftly from underseas cable taps to underground nuclear sabotage, from blackouts and data breaches to billion-dollar heists and election interference. |
-| [Psychology of Intelligence Analysis](https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/) | The Psychology of Intelligence Analysis has been required reading for intelligence officers studying the art and science of intelligence analysis for decades. Richards Heuer, Jr. discusses in the book how fundamental limitations in human mental processes can prompt people to jump to conclusions and employ other simplifying strategies that lead to predictably faulty judgments known as cognitive biases. These analytic mindsets cannot be avoided, but they can be overcome through the application of more structured and rigorous analytic techniques, including the Analysis of Competing Hypotheses. |
-| [The Spy in Moscow Station](https://www.amazon.com.au/Spy-Moscow-Station-Counterspys-Deadly/dp/1250301165) | In the late 1970s, the National Security Agency still did not officially exist--those in the know referred to it dryly as the No Such Agency. So why, when NSA engineer Charles Gandy filed for a visa to visit Moscow, did the Russian Foreign Ministry assert with confidence that he was a spy? Outsmarting honey traps and encroaching deep enough into enemy territory to perform complicated technical investigations, Gandy accomplished his mission in Russia but discovered more than State and CIA wanted him to know. |
 
 ## Training courses
 
@@ -77,6 +68,8 @@ I have not personally used any of these platforms, but am sharing the list, if y
 | [Blue Team Labs Online](https://blueteamlabs.online/) | This platform offers gamified challenges for defenders to practice security investigations in areas such as incident response, digital forensics, security operations, reverse engineering, and threat hunting. Free and paid tiers are available. |
 | [CyberDefenders: Blue Team CTF Challenges](https://cyberdefenders.org/) | This platform provides free access to gamified security challenges for defenders. It covers incident response, digital forensics, security operations, reverse engineering, and threat hunting. |
 | [LetsDefend: Blue Team Training Platform](https://letsdefend.io/) | Online SOC analyst and incident response training platform for blue team members. |
+
+## Capture the flag archives
 
 | Capture The Flag Competitions (Archives) | Description |
 |----------------------------------------|-------------|
