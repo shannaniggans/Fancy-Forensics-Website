@@ -15,8 +15,9 @@ Last Updated: 18 July 2022
 | [This Week in 4n6](https://thisweekin4n6.com/podcast/) | This Week in 4n6 is a collection of everything that happens on a weekly basis in the Digital Forensics and Incident Response community. |
 | [Risky Business](https://risky.biz/)| Published weekly, the Risky Business podcast features news and in-depth commentary from security industry luminaries. Hosted by award-winning journalist Patrick Gray, Risky Business has become a must-listen digest for information security professionals. |
 | [Darknet Diaries](https://darknetdiaries.com/) | True stories from the dark side of the Internet. This is a podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network. |
-| [Forensics Reformatted Podcast](https://anchor.fm/4n6reformatted) | Forensics Reformatted is a Digital Forensics podcast by former Chewing the FAT hosts, Adam Firman & Phil Cobley. The show is self-funded and aimed at supporting the DFIR community through insights, humour, and bringing together others from in and around the industry. |
 | [Stark4n6 Forensics Startme Page](https://start.me/p/q6mw4Q/forensics) | One stop shop for DFIR resources and links, from tools, cheatsheets, hardware, blog feeds and more. Blog also has a load of CTF write ups. |
+| [BlueMonkey 4n6](https://m.youtube.com/c/BlueMonkey4n6) | BlueMonkey 4n6 focuses on digital forensics and incident response using open-source tools. It covers various aspects of forensics on different platforms and tools. |
+| [Forensics Reformatted Podcast](https://anchor.fm/4n6reformatted) | Forensics Reformatted is a Digital Forensics podcast by former Chewing the FAT hosts, Adam Firman & Phil Cobley. The show is self-funded and aimed at supporting the DFIR community through insights, humour, and bringing together others from in and around the industry. |
     
 ## Communities
 
@@ -52,23 +53,30 @@ Last Updated: 18 July 2022
 
 ## Training courses
 
-  | Free Online Training | Description |
+  | Online Training | Description |
 |----------------------|-------------|
 | [Free Short Course: Digital Forensics](https://itmasters.edu.au/free-short-course-digital-forensics-updated/) | Cyber criminals saw their opportunity and made the most of it in 2020. With such a drastic shift to online everything for everyone, we saw cyber criminals make some pretty daring moves. Due to these increasingly sophisticated cyber-attacks, forensic investigations are becoming more and more common. This short course offers an introduction to our full Digital Forensics subject, including a high-level view of the emerging and evolving digital forensics field, investigating, detecting, and preventing digital crimes, formulating a digital forensics process, and more. |
 | [Free Short Course: Cyber Warfare and Terrorism](https://itmasters.edu.au/free-short-course-cyber-warfare-and-terrorism/) | This four-week short course introduces you to the rise of state-sponsored cyber attacks, a concept that only a few years ago seemed within the realm of science fiction. You will be introduced to the major classes of cyber weapons: trojans, worms, and distributed denial of service, as well as sophisticated hacking. You will also learn the history of nation-state involvement in cyber attacks and the looming threat of cyber attacks from terrorist organizations. |
-| [DFIR Diva Free IR Training](https://training.dfirdiva.com/training-listings) | Elan, aka DFIR Diva, provides free incident response training for entry-level Incident Response Analysts who want to learn more about digital forensics and analysis on a limited budget. |
-| [Hal Pomeranz's Linux Forensics Intro](https://archive.org/details/HalLinuxForensics) | This course offers course materials and a lab virtual machine for an introductory course in Linux Forensics. |
-| [CyberDefenders: Blue Team CTF Challenges](https://cyberdefenders.org/) | This platform provides free access to gamified security challenges for defenders. It covers incident response, digital forensics, security operations, reverse engineering, and threat hunting. |
-| [MITRE ATT&CK Training and Certification](https://www.cybrary.it/course/application-of-the-mitre-attack-framework/) | This training is designed to teach students how to apply the MITRE ATT&CK framework to help mitigate current threats. It covers the 12 core areas of the framework, helping students develop a thorough understanding of various attack vectors. |
+| [Free - DFIR Diva IR Training](https://training.dfirdiva.com/training-listings) | Elan, aka DFIR Diva, provides free incident response training for entry-level Incident Response Analysts who want to learn more about digital forensics and analysis on a limited budget. |
+| [Free - Hal Pomeranz's Linux Forensics Intro](https://archive.org/details/HalLinuxForensics) | This course offers course materials and a lab virtual machine for an introductory course in Linux Forensics. |
+| [Free - MITRE ATT&CK Training](https://www.cybrary.it/course/application-of-the-mitre-attack-framework/) | This training is designed to teach students how to apply the MITRE ATT&CK framework to help mitigate current threats. It covers the 12 core areas of the framework, helping students develop a thorough understanding of various attack vectors. Training is free and if you want to be certified you need to pay.|
 | [Malware Unicorn’s Reverse Engineering 101](https://malwareunicorn.org/workshops/re101.html#0) | This workshop provides the fundamentals of reversing engineering (RE) Windows malware using hands-on experience with RE tools and techniques. It covers RE terms, processes, basic x86 assembly programming, RE tools, and malware techniques. |
 | [Splunk Fundamentals 1](https://www.splunk.com/en_us/training/free-courses/splunk-fundamentals-1.html) | This course teaches you how to search and navigate in Splunk, use fields, get statistics from your data, create reports, dashboards, lookups, and alerts. It includes scenario-based examples and hands-on challenges. |
 | [Binary Analysis Course](https://maxkersten.nl/binary-analysis-course/) | This course provides a detailed explanation of each step taken when analyzing malware. It focuses on the thought process and technical analysis involved in the process. |
-| [Blue Team Labs Online](https://blueteamlabs.online/) | This platform offers gamified challenges for defenders to practice security investigations in areas such as incident response, digital forensics, security operations, reverse engineering, and threat hunting. Free and paid tiers are available. |
 | [TryHackMe Cyber Security Training](https://tryhackme.com/) | TryHackMe offers interactive lessons for hands-on learning. It includes network simulations and technology based on real-world examples. |
 | [Become a Microsoft Sentinel Ninja: The complete level 400 training](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310) | This training program includes 16 modules with presentations and supporting information for each module. |
 | [DFIR Cheatsheet](https://www.jaiminton.com/cheatsheet/DFIR/) | Curated by Jai Minton, this page contains a variety of commands and concepts known through experience, education, tutorials, blogs, videos, professional training, and more. |
-| [BlueMonkey 4n6](https://m.youtube.com/c/BlueMonkey4n6) | BlueMonkey 4n6 focuses on digital forensics and incident response using open-source tools. It covers various aspects of forensics on different platforms and tools. |
 | [Google Technical Writing Course](https://developers.google.com/tech-writing/overview?authuser=1) | Learn the basics of technical writing through this course. |
+
+## Blueteam training platforms
+
+I have not personally used any of these platforms, but am sharing the list, if you have any feedback on these feel free to let me know!
+
+| Online Training | Description |
+|----------------------|-------------|
+| [Blue Team Labs Online](https://blueteamlabs.online/) | This platform offers gamified challenges for defenders to practice security investigations in areas such as incident response, digital forensics, security operations, reverse engineering, and threat hunting. Free and paid tiers are available. |
+| [CyberDefenders: Blue Team CTF Challenges](https://cyberdefenders.org/) | This platform provides free access to gamified security challenges for defenders. It covers incident response, digital forensics, security operations, reverse engineering, and threat hunting. |
+| [LetsDefend: Blue Team Training Platform](https://letsdefend.io/) | Online SOC analyst and incident response training platform for blue team members. |
 
 | Capture The Flag Competitions (Archives) | Description |
 |----------------------------------------|-------------|
