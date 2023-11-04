@@ -71,8 +71,7 @@ April 29, 2022
 
 ### CrikeyCon 2022 (September 8, 2022)
 
-**Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
-
+* **Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
 This workshop will walk through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type.
 
 
