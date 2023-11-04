@@ -17,31 +17,61 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
 ## 2023
 
-### AISA Cybercon Canberra 2023
-March 22, 2023
-**AISA Cybercon Canberra 2023**
-
-### AISA Cybercon Canberra 2023
-March 22, 2023
-**AISA Cybercon Canberra 2023**
-
-### AISA Cybercon Canberra 2023
-March 22, 2023
-  **AISA Cybercon Canberra 2023**
-
-## 2022
-
 ### The Diana Initiative
 *July 16, 2023*
-* **Cybersecurity Research Panel**
+* **(Panel) Cybersecurity Research Panel**
     
     This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals.
     
     [Watch Video](https://youtu.be/_SwOxK3T1gg?si=EwoVqQMvHhT2ActD)
 
-### AusCERT Conference 2022
-May 13, 2022
-  **AusCERT Conference 2022**
+### AISA Cybercon Canberra 2023
+*March 21, 2023*
+* **(Panel) What's next for women in cyber?**
+    
+    A panel discussion with Corch, Chloe Hatzis, Daisy Wong, and Shanna Daly on how we can keep moving the dial on diversity.
+
+* **(Panel) The value of cyber threat intelligence**
+
+    A panel discussion with Shanna Daly, Bex Nitert, Chris Horsley, and Brett Williams on what threat intel is and how it is used by practitioners.
+
+*March 22, 2023*
+* **(Live podcast) Keynote session - Risky Business live podcast**
+
+    Shanna Daly joined Patrick Gray and Adam Boileau on stage at AISA Cybercon to talk about why the infosec industry sucks.
+
+    [Listen Here](https://risky.biz/RB700/)
+
+* **(Presentation) Threat Intelligence without boiling the ocean**
+
+    Whilst no one will ever tell you that threat intelligence is easy, setting out on the path to use it in smart ways doesn't need to be overwhelming. The amount of open source intelligence feeds, documents, blog posts and information shared in the community can easily become overwhelming, but there are some ways we can tackle this without jumping in the deep end, so to speak.
+
+    [Read the follow up blog post Here](https://www.cosive.com/blog/docintel-misp-threat-intelligence-without-boiling-the-ocean)
+
+
+
+## 2022
+
+### BSides Melbourne 2022
+*September 10, 2022*
+
+* **(Presentation) Old dog, new tricks**
+
+    This first-time talk with Mike and Shanna takes a fun and informative look at how todays cyber landscape has its roots in the tools and methodologies of the Cold War. With the aid of genuine spy artefacts Mike and Shanna will aim to give attendees a better appreciation of how the craft of traditional espionage maps to the modern cyber world.
+    
+    Drawing on Shanna’s deep experience in mitigating cyber threats, and Mike’s extensive collection of espionage tech, this talk will take you from housebreaking to Access Brokers, from typewriters to Keyloggers, from bugs and Kompromat cameras to RATS, from speech-over-IR to malware C&C - and more.
+
+*September 9, 2022*
+* **(Workshop) Introduction to Digital Forensics**
+
+    During this workshop participants will be introduced to the fundamentals of digital forensics, including artefact collection, preservation and analysis. Participants will learn how to start a digital investigation using open source or freely available tools to demonstrate the theory and challenges will be provided to participants to practice along. 
+
+### CrikeyCon 2022
+*September 8, 2022*
+
+* **(Workshop) Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
+    
+    This workshop walked through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type.
 
 ### AusCERT Conference 2022
 *may 10, 2022*
@@ -56,30 +86,27 @@ May 13, 2022
 
     [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE)
 
-## 2020
-
-### Women speak cyber
-March 31, 2022
-  **Sharing Your Knowledge with special guest Shanna Daly**
-  In this episode, LP, LV, and Shanna discuss her career, why she loves what she does and the importance of managing burnout, especially when you are passionate about what you do. They also chat about Shanna’s public speaking journey, how she overcomes nerves and her ambition to keynote at RSA as well as the inclusive, community conference she co-founded called ComfyCon.
-  [Listen Here](https://omny.fm/shows/women-speak-cyber/sharing-your-knowledge-with-special-guest-shanna-d)
-
-## 2019
-
 ### CRESTCon Australia 2022
 *April 29, 2022*
   * **Long story short (Persistence)**
+    
     [Watch Video](https://youtu.be/TdjTFNiHjJU?si=Lgb4cUHlDriI9Vuv)
   * **A typical day working in incident response**
+    
     [Watch Video](https://youtu.be/wqp1wgLnLAk?si=cEPgNu_auMYEDrT_)
 
+### Women speak cyber
+*March 31, 2022*
+* **Sharing Your Knowledge with special guest Shanna Daly**
 
-### CrikeyCon 2022
-*September 8, 2022*
+    In this episode, LP, LV, and Shanna discuss her career, why she loves what she does and the importance of managing burnout, especially when you are passionate about what you do. They also chat about Shanna’s public speaking journey, how she overcomes nerves and her ambition to keynote at RSA as well as the inclusive, community conference she co-founded called ComfyCon.
 
-* **(Workshop) Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
-    
-    This workshop walked through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type.
+    [Listen Here](https://omny.fm/shows/women-speak-cyber/sharing-your-knowledge-with-special-guest-shanna-d)
+
+
+
+
+## 2020
 
 ### Magnet forensics: Cache Up podcast
 *October 21, 2020*
@@ -92,21 +119,12 @@ March 31, 2022
 ## 2016
 
 ### CrikeyCon 2016
-February 20, 2016
-  **CrikeyCon 2016 - Shanna Daly and Jason Solomon - Data Exfiltration in the Wild**
-  [Watch Video](https://youtu.be/RNP3sDS1WKk?si=SyI_5xcwG6eC3dB6)
+*February 20, 2016*
+* **(Presentation) Data Exfiltration in the Wild**
 
-## 2022
 
-### Bsides Melbourne 2022
-**Old dog, new tricks**
 
-### Bsides Melbourne 2022
-**Introduction to Digital Forensics**
+    [Watch Video](https://youtu.be/RNP3sDS1WKk?si=SyI_5xcwG6eC3dB6)
 
-## 2023
-
-### Bsides Melbourne 2023
-**Introduction to Digital Forensics**
 
 
