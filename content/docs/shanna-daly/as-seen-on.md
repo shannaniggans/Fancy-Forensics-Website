@@ -19,11 +19,11 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
 ### AISA Cybercon Canberra 2023
 March 22, 2023
-  **AISA Cybercon Canberra 2023**
+**AISA Cybercon Canberra 2023**
 
 ### AISA Cybercon Canberra 2023
 March 22, 2023
-  **AISA Cybercon Canberra 2023**
+**AISA Cybercon Canberra 2023**
 
 ### AISA Cybercon Canberra 2023
 March 22, 2023
@@ -33,8 +33,9 @@ March 22, 2023
 
 ### The Diana Initiative
 July 16, 2023
-  **Cybersecurity Research Panel**
-  This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals.
+**Cybersecurity Research Panel**
+This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals.
+[Watch Video](https://youtu.be/_SwOxK3T1gg?si=EwoVqQMvHhT2ActD)
 
 ### AusCERT Conference 2022
 May 13, 2022
@@ -70,11 +71,14 @@ April 29, 2022
 
 ### CrikeyCon 2022
 September 8, 2022
+
   **Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
 
 ### Magnet forensics: Cache Up podcast
 October 21, 2020
+
   **Magnet Forensics Presents: Cache Up - Ep.21 - Shanna Daly**
+
   Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field.
   [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_)
 
