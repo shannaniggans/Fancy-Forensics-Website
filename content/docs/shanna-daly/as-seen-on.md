@@ -15,25 +15,23 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
 (written by ChatGPT cause there is no way I'd write that about myself!)
 
-| Date       | Title                                                      | Event                             | Abstract                                   | Link                                                                                                     |
-|------------|------------------------------------------------------------|-----------------------------------|--------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| 22-Mar-23 | AISA Cybercon Canberra 2023 | | | |
-| 22-Mar-23 | AISA Cybercon Canberra 2023 | | | |
-| 22-Mar-23 | AISA Cybercon Canberra 2023 | | | |
-| 16-Jul-23 | Cybersecurity Research Panel | The Diana Initiative | This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals. | [Watch Video](https://youtu.be/_SwOxK3T1gg?si=EwoVqQMvHhT2ActD) |
-| 13-May-22 | Introduction to Digital Forensics | AusCERT Conference 2022 | | |
-| 13-May-22 | Overcoming cognitive bias | AusCERT Conference 2022 | Cognitive biases are human errors that lead to an irrational or incorrect conclusion based on a particular person's view of the world. For each of us, our individual biases drive our decisions every day; from where we sit on the bus, who we get our coffee from and how we do our work. These biases are based on many factors, including our upbringing, belief system, personal experiences and education and if run unchecked in security operations, can impact the security of an organisation. When building a team to run cyber investigations diversity can be the key to breaking the bias and I'll talk through what some of these biases look like in the real world and some of the ways I have tried to combat them through hiring team members from diverse backgrounds and skillsets. | [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE) |
-| 31-Mar-22 | Sharing Your Knowledge with special guest Shanna Daly | Women speak cyber | In this episode, LP, LV and Shanna discuss her career, why she loves what she does and the importance of managing burnout, especially when you are passionate about what you do. They also chat about Shanna’s public speaking journey, how she overcomes nerves and her ambition to keynote at RSA as well as the inclusive, community conference she co-founded called ComfyCon. | [Listen Here](https://omny.fm/shows/women-speak-cyber/sharing-your-knowledge-with-special-guest-shanna-d) |
-| 29-Apr-22 | Long story short (Persistence) | CRESTCon Australia 2022 | | [Watch Video](https://youtu.be/TdjTFNiHjJU?si=Lgb4cUHlDriI9Vuv) |
-| 29-Apr-22 | A typical day working in incident response | CRESTCon Australia 2022 | | [Watch Video](https://youtu.be/wqp1wgLnLAk?si=cEPgNu_auMYEDrT_) |
-| 8-Sep-22  | Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities | CrikeyCon 2022 | This workshop will walk through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type. | |
-| 21-Oct-20 | Magnet Forensics Presents: Cache Up - Ep.21 - Shanna Daly | Magnet forensics: Cache Up podcast | Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field. | [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_) |
-| 20-Feb-16 | CrikeyCon 2016 - Shanna Daly and Jason Solomon - Data Exfiltration in the Wild | CrikeyCon 2016 | | [Watch Video](https://youtu.be/RNP3sDS1WKk?si=SyI_5xcwG6eC3dB6) |
-|            | SecTalks Hobart | | | |
-|            | NZITF 2022 | | | |
-|            | NZITF 2021 | | | |
-|            | Old dog, new tricks | Bsides Melbourne 2022 | | |
-|            | Introduction to Digital Forensics | Bsides Melbourne 2022 | | |
-|            | Introduction to Digital Forensics | Bsides Melbourne 2023 | | |
-
-
+| Date       | Event                             | Description                                   | Link                                                                                                     |
+|------------|-----------------------------------|--------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| 22-Mar-23 | AISA Cybercon Canberra 2023 | **_AISA Cybercon Canberra 2023_** | |
+| 22-Mar-23 | AISA Cybercon Canberra 2023 | **_AISA Cybercon Canberra 2023_** | |
+| 22-Mar-23 | AISA Cybercon Canberra 2023 | **_AISA Cybercon Canberra 2023_** | |
+| 16-Jul-23 | The Diana Initiative | **_Cybersecurity Research Panel_** This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals. | [Watch Video](https://youtu.be/_SwOxK3T1gg?si=EwoVqQMvHhT2ActD) |
+| 13-May-22 | AusCERT Conference 2022 | **_AusCERT Conference 2022_** | |
+| 13-May-22 | AusCERT Conference 2022 | **_Overcoming cognitive bias_** Cognitive biases are human errors that lead to an irrational or incorrect conclusion based on a particular person's view of the world. For each of us, our individual biases drive our decisions every day; from where we sit on the bus, who we get our coffee from and how we do our work. These biases are based on many factors, including our upbringing, belief system, personal experiences, and education and if run unchecked in security operations, can impact the security of an organization. When building a team to run cyber investigations diversity can be the key to breaking the bias and I'll talk through what some of these biases look like in the real world and some of the ways I have tried to combat them through hiring team members from diverse backgrounds and skillsets. | [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE) |
+| 31-Mar-22 | Women speak cyber | **_Sharing Your Knowledge with special guest Shanna Daly_** In this episode, LP, LV, and Shanna discuss her career, why she loves what she does and the importance of managing burnout, especially when you are passionate about what you do. They also chat about Shanna’s public speaking journey, how she overcomes nerves and her ambition to keynote at RSA as well as the inclusive, community conference she co-founded called ComfyCon. | [Listen Here](https://omny.fm/shows/women-speak-cyber/sharing-your-knowledge-with-special-guest-shanna-d) |
+| 29-Apr-22 | CRESTCon Australia 2022 | **_A typical day working in incident response_** | [Watch Video](https://youtu.be/wqp1wgLnLAk?si=cEPgNu_auMYEDrT_) |
+| 29-Apr-22 | CRESTCon Australia 2022 | **_Long story short (Persistence)_** | [Watch Video](https://youtu.be/TdjTFNiHjJU?si=Lgb4cUHlDriI9Vuv) |
+| 8-Sep-22  | CrikeyCon 2022 | **_Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities_** This workshop will walk through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type. | |
+| 21-Oct-20 | Magnet forensics: Cache Up podcast | **_Magnet Forensics Presents: Cache Up - Ep.21 - Shanna Daly_** Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field. | [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_) |
+| 20-Feb-16 | CrikeyCon 2016 | **_CrikeyCon 2016 - Shanna Daly and Jason Solomon - Data Exfiltration in the Wild_** | [Watch Video](https://youtu.be/RNP3sDS1WKk?si=SyI_5xcwG6eC3dB6) |
+|            | SecTalks Hobart | **_SecTalks Hobart_** | |
+|            | NZITF 2022 | **_NZITF 2022_** | |
+|            | NZITF 2021 | **_NZITF 2021_** | |
+|            | Bsides Melbourne 2022 | **_Old dog, new tricks_** | |
+|            | Bsides Melbourne 2022 | **_Introduction to Digital Forensics_** | |
+|            | Bsides Melbourne 2023 | **_Introduction to Digital Forensics_** | |
