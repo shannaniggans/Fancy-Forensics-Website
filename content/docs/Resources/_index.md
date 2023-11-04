@@ -1,4 +1,5 @@
 ---
+bookCollapseSection: true
 title: DFIR knowledge and resources
 weight: 200
 ---
