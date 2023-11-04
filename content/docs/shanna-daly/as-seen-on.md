@@ -32,20 +32,29 @@ March 22, 2023
 ## 2022
 
 ### The Diana Initiative
-July 16, 2023
-**Cybersecurity Research Panel**
-This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals.
-[Watch Video](https://youtu.be/_SwOxK3T1gg?si=EwoVqQMvHhT2ActD)
+*July 16, 2023*
+* **Cybersecurity Research Panel**
+    
+    This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals.
+    
+    [Watch Video](https://youtu.be/_SwOxK3T1gg?si=EwoVqQMvHhT2ActD)
 
 ### AusCERT Conference 2022
 May 13, 2022
   **AusCERT Conference 2022**
 
 ### AusCERT Conference 2022
-May 13, 2022
-  **Overcoming cognitive bias**
-  Cognitive biases are human errors that lead to an irrational or incorrect conclusion based on a particular person's view of the world. For each of us, our individual biases drive our decisions every day; from where we sit on the bus, who we get our coffee from and how we do our work. These biases are based on many factors, including our upbringing, belief system, personal experiences, and education and if run unchecked in security operations, can impact the security of an organization. When building a team to run cyber investigations diversity can be the key to breaking the bias and I'll talk through what some of these biases look like in the real world and some of the ways I have tried to combat them through hiring team members from diverse backgrounds and skillsets.
-  [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE)
+*may 10, 2022*
+* **(Workshop) Introduction to digital forensics**
+
+    <to do>
+
+*May 13, 2022*
+* **(Presentation) Overcoming cognitive bias**
+
+    Cognitive biases are human errors that lead to an irrational or incorrect conclusion based on a particular person's view of the world. For each of us, our individual biases drive our decisions every day; from where we sit on the bus, who we get our coffee from and how we do our work. These biases are based on many factors, including our upbringing, belief system, personal experiences, and education and if run unchecked in security operations, can impact the security of an organization. When building a team to run cyber investigations diversity can be the key to breaking the bias and I'll talk through what some of these biases look like in the real world and some of the ways I have tried to combat them through hiring team members from diverse backgrounds and skillsets.
+
+    [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE)
 
 ## 2020
 
@@ -58,31 +67,27 @@ March 31, 2022
 ## 2019
 
 ### CRESTCon Australia 2022
-April 29, 2022
-  **A typical day working in incident response**
-  [Watch Video](https://youtu.be/wqp1wgLnLAk?si=cEPgNu_auMYEDrT_)
+*April 29, 2022*
+  * **Long story short (Persistence)**
+    [Watch Video](https://youtu.be/TdjTFNiHjJU?si=Lgb4cUHlDriI9Vuv)
+  * **A typical day working in incident response**
+    [Watch Video](https://youtu.be/wqp1wgLnLAk?si=cEPgNu_auMYEDrT_)
 
-### CRESTCon Australia 2022
-April 29, 2022
-  **Long story short (Persistence)**
-  [Watch Video](https://youtu.be/TdjTFNiHjJU?si=Lgb4cUHlDriI9Vuv)
-
-## 2016
 
 ### CrikeyCon 2022
 *September 8, 2022*
 
 * **(Workshop) Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
-    This workshop will walk through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type.
-
+    
+    This workshop walked through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type.
 
 ### Magnet forensics: Cache Up podcast
-October 21, 2020
+*October 21, 2020*
 
-  **Cache Up - Ep.21 - Shanna Daly**
+  * **Cache Up - Ep.21 - Shanna Daly**
 
-  Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field.
-  [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_)
+    Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field.
+    [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_)
 
 ## 2016
 
