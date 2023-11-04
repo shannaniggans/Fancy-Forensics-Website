@@ -15,98 +15,87 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
 (written by ChatGPT cause there is no way I'd write that about myself!)
 
-- **AISA Cybercon Canberra 2023**
-  - Date: March 22, 2023
-  - Title: AISA Cybercon Canberra 2023
-  - Description:
-    - Link:
+## 2023
 
-- **AISA Cybercon Canberra 2023**
-  - Date: March 22, 2023
-  - Title: AISA Cybercon Canberra 2023
-  - Description:
-    - Link:
+### AISA Cybercon Canberra 2023
+- March 22, 2023
+  - **AISA Cybercon Canberra 2023**
 
-- **AISA Cybercon Canberra 2023**
-  - Date: March 22, 2023
-  - Title: AISA Cybercon Canberra 2023
-  - Description:
-    - Link:
+### AISA Cybercon Canberra 2023
+- March 22, 2023
+  - **AISA Cybercon Canberra 2023**
 
-- **The Diana Initiative**
-  - Date: July 16, 2023
-  - Title: Cybersecurity Research Panel
-  - Description:
-    - This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals.
-  - Link: [Watch Video](https://youtu.be/_SwOxK3T1gg?si=EwoVqQMvHhT2ActD)
+### AISA Cybercon Canberra 2023
+- March 22, 2023
+  - **AISA Cybercon Canberra 2023**
 
-- **AusCERT Conference 2022**
-  - Date: May 13, 2022
-  - Title: AusCERT Conference 2022
-  - Description:
-    - Link:
+## 2022
 
-- **AusCERT Conference 2022**
-  - Date: May 13, 2022
-  - Title: Overcoming cognitive bias
-  - Description:
-    - Cognitive biases are human errors that lead to an irrational or incorrect conclusion based on a particular person's view of the world. For each of us, our individual biases drive our decisions every day; from where we sit on the bus, who we get our coffee from and how we do our work. These biases are based on many factors, including our upbringing, belief system, personal experiences, and education and if run unchecked in security operations, can impact the security of an organization. When building a team to run cyber investigations diversity can be the key to breaking the bias and I'll talk through what some of these biases look like in the real world and some of the ways I have tried to combat them through hiring team members from diverse backgrounds and skillsets.
-  - Link: [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE)
+### The Diana Initiative
+- July 16, 2023
+  - **Cybersecurity Research Panel**
+  - This video features a panel of experts discussing topics related to cybersecurity research. They provide insights on how to pick a research topic, structure your research, manage your time, and set realistic goals.
 
-- **Women speak cyber**
-  - Date: March 31, 2022
-  - Title: Sharing Your Knowledge with special guest Shanna Daly
-  - Description:
-    - In this episode, LP, LV, and Shanna discuss her career, why she loves what she does and the importance of managing burnout, especially when you are passionate about what you do. They also chat about Shanna’s public speaking journey, how she overcomes nerves and her ambition to keynote at RSA as well as the inclusive, community conference she co-founded called ComfyCon.
-  - Link: [Listen Here](https://omny.fm/shows/women-speak-cyber/sharing-your-knowledge-with-special-guest-shanna-d)
+### AusCERT Conference 2022
+- May 13, 2022
+  - **AusCERT Conference 2022**
 
-- **CRESTCon Australia 2022**
-  - Date: April 29, 2022
-  - Title: A typical day working in incident response
-  - Description:
-    - Link: [Watch Video](https://youtu.be/wqp1wgLnLAk?si=cEPgNu_auMYEDrT_)
+### AusCERT Conference 2022
+- May 13, 2022
+  - **Overcoming cognitive bias**
+  - Cognitive biases are human errors that lead to an irrational or incorrect conclusion based on a particular person's view of the world. For each of us, our individual biases drive our decisions every day; from where we sit on the bus, who we get our coffee from and how we do our work. These biases are based on many factors, including our upbringing, belief system, personal experiences, and education and if run unchecked in security operations, can impact the security of an organization. When building a team to run cyber investigations diversity can be the key to breaking the bias and I'll talk through what some of these biases look like in the real world and some of the ways I have tried to combat them through hiring team members from diverse backgrounds and skillsets.
+  - [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE)
 
-- **CRESTCon Australia 2022**
-  - Date: April 29, 2022
-  - Title: Long story short (Persistence)
-  - Description:
-    - Link: [Watch Video](https://youtu.be/TdjTFNiHjJU?si=Lgb4cUHlDriI9Vuv)
+## 2020
 
-- **CrikeyCon 2022**
-  - Date: September 8, 2022
-  - Title: Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities
-  - Description:
-    - This workshop will walk through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type.
+### Women speak cyber
+- March 31, 2022
+  - **Sharing Your Knowledge with special guest Shanna Daly**
+  - In this episode, LP, LV, and Shanna discuss her career, why she loves what she does and the importance of managing burnout, especially when you are passionate about what you do. They also chat about Shanna’s public speaking journey, how she overcomes nerves and her ambition to keynote at RSA as well as the inclusive, community conference she co-founded called ComfyCon.
+  - [Listen Here](https://omny.fm/shows/women-speak-cyber/sharing-your-knowledge-with-special-guest-shanna-d)
 
-- **Magnet forensics: Cache Up podcast**
-  - Date: October 21, 2020
-  - Title: Magnet Forensics Presents: Cache Up - Ep.21 - Shanna Daly
-  - Description:
-    - Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field.
-  - Link: [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_)
+## 2019
 
-- **CrikeyCon 2016**
-  - Date: February 20, 2016
-  - Title: CrikeyCon 2016 - Shanna Daly and Jason Solomon - Data Exfiltration in the Wild
-  - Description:
-    - Link: [Watch Video](https://youtu.be/RNP3sDS1WKk?si=SyI_5xcwG6eC3dB6)
+### CRESTCon Australia 2022
+- April 29, 2022
+  - **A typical day working in incident response**
+  - [Watch Video](https://youtu.be/wqp1wgLnLAk?si=cEPgNu_auMYEDrT_)
 
-- **SecTalks Hobart**
+### CRESTCon Australia 2022
+- April 29, 2022
+  - **Long story short (Persistence)**
+  - [Watch Video](https://youtu.be/TdjTFNiHjJU?si=Lgb4cUHlDriI9Vuv)
 
-- **NZITF 2022**
+## 2016
 
-- **NZITF 2021**
+### CrikeyCon 2022
+- September 8, 2022
+  - **Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
 
-- **Bsides Melbourne 2022**
-  - Title: Old dog, new tricks
-  - Description:
+### Magnet forensics: Cache Up podcast
+- October 21, 2020
+  - **Magnet Forensics Presents: Cache Up - Ep.21 - Shanna Daly**
+  - Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field.
+  - [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_)
 
-- **Bsides Melbourne 2022**
-  - Title: Introduction to Digital Forensics
-  - Description:
+## 2016
 
-- **Bsides Melbourne 2023**
-  - Title: Introduction to Digital Forensics
-  - Description:
+### CrikeyCon 2016
+- February 20, 2016
+  - **CrikeyCon 2016 - Shanna Daly and Jason Solomon - Data Exfiltration in the Wild**
+  - [Watch Video](https://youtu.be/RNP3sDS1WKk?si=SyI_5xcwG6eC3dB6)
+
+## 2022
+
+### Bsides Melbourne 2022
+- **Old dog, new tricks**
+
+### Bsides Melbourne 2022
+- **Introduction to Digital Forensics**
+
+## 2023
+
+### Bsides Melbourne 2023
+- **Introduction to Digital Forensics**
 
 
