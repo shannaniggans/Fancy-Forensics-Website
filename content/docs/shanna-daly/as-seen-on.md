@@ -15,6 +15,8 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
 (written by ChatGPT cause there is no way I'd write that about myself!)
 
+***
+
 ## 2023
 
 ### The Diana Initiative
