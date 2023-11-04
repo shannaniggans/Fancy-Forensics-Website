@@ -48,8 +48,6 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
     [Read the follow up blog post Here](https://www.cosive.com/blog/docintel-misp-threat-intelligence-without-boiling-the-ocean)
 
-
-
 ## 2022
 
 ### BSides Melbourne 2022
@@ -67,24 +65,23 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
     During this workshop participants will be introduced to the fundamentals of digital forensics, including artefact collection, preservation and analysis. Participants will learn how to start a digital investigation using open source or freely available tools to demonstrate the theory and challenges will be provided to participants to practice along. 
 
 ### CrikeyCon 2022
-*September 8, 2022*
-
+*September 3, 2022*
 * **(Workshop) Using the ATT&CK matrix to map incidents to bolster detect and respond capabilities**
     
     This workshop walked through the anatomy of an incident, from mapping incident stages to the ATT&CK tactics and techniques and then developing detection and mitigation strategies most relevant to that particular threat type.
 
 ### AusCERT Conference 2022
-*may 10, 2022*
-* **(Workshop) Introduction to digital forensics**
-
-    <to do>
-
 *May 13, 2022*
 * **(Presentation) Overcoming cognitive bias**
 
     Cognitive biases are human errors that lead to an irrational or incorrect conclusion based on a particular person's view of the world. For each of us, our individual biases drive our decisions every day; from where we sit on the bus, who we get our coffee from and how we do our work. These biases are based on many factors, including our upbringing, belief system, personal experiences, and education and if run unchecked in security operations, can impact the security of an organization. When building a team to run cyber investigations diversity can be the key to breaking the bias and I'll talk through what some of these biases look like in the real world and some of the ways I have tried to combat them through hiring team members from diverse backgrounds and skillsets.
 
     [Watch Video](https://youtu.be/X7e8weJ2p5I?si=_tJFhxHv94alwKXE)
+
+*may 10, 2022*
+* **(Workshop) Introduction to digital forensics**
+
+    During this workshop participants will be introduced to the fundamentals of digital forensics, including artefact collection, preservation and analysis. Participants will learn how to start a digital investigation using open source or freely available tools to demonstrate the theory and challenges will be provided to participants to practice along.
 
 ### CRESTCon Australia 2022
 *April 29, 2022*
@@ -115,6 +112,15 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
     Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field.
     [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_)
+
+
+## 2019
+
+### BSides New Orleans
+*October 26, 2019*
+* **(Presentation) Threat modelling in the land down under**
+
+    Australia is (in)famous for its dangerous flora and fauna, most notably deadly spiders, snakes and jellyfish. We continually have to look at potential threats and assess our risk of basic things like venturing outside. This talk looks to help turn threat modelling exercises into something relatable, fun and educational. Too often security education is delivered in a dry format that is difficult for non security folks to digest, so let’s look at fun ways to turn that around!
 
 ## 2016
 
