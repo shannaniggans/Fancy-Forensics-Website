@@ -128,6 +128,9 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
     Australia is (in)famous for its dangerous flora and fauna, most notably deadly spiders, snakes and jellyfish. We continually have to look at potential threats and assess our risk of basic things like venturing outside. This talk looks to help turn threat modelling exercises into something relatable, fun and educational. Too often security education is delivered in a dry format that is difficult for non security folks to digest, so let’s look at fun ways to turn that around!
 
+### ICSL MRE 2019
+*July 1 and 2, 2019*
+* **(Presentation) SRUM Forensics In Windows**
 
 ***
 
@@ -141,5 +144,13 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
     [Watch Video](https://youtu.be/RNP3sDS1WKk?si=SyI_5xcwG6eC3dB6)
 
+***
 
+## 2015
+
+### ICSL MRE 2015
+*October 2, 2015*
+* **(Presentation) Incident response - The first 24 hours**
+
+    Cause it always happens at 3pm on a Friday …. You’ve received an alert, could be anything from a user reporting weird behaviour after clicking on a link, or after opening an attachment, could be an alert from your AV, correlation in SIEM detected something from a threat intel feed, external party notification, from your own analysis of a binary, the source for our purposes is irrelevant as we want to look at what to do and mostly what NOT to do in the first 24 hours after an incident has been detected (and the first world problems of incidents always happening late on a Friday …)
 
