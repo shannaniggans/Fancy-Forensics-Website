@@ -22,7 +22,7 @@ weight: 10
 
 ## Introduction
 
-This blog post is based on a presentation that I gave in 2019 a few times. In going through my archives I decided to write up these presentations into blog posts as the information is still relevant and I can update where needed.
+Back in 2019 when I was running my own consulting gig, Caccia Cybersecurity, I learnt about a new (at the time) artefact that had recently been discovered and 'decoded'. The SRUM. This blog post is based on a presentation that I gave in 2019 at The 2019 ICSL MRE conference in Sydney, and the Carbon Black Partner IR summit for APAC. In going through my archives of presentations, I decided to write up these presentations into blog posts as the information is still relevant and I can update where needed.
 
 In the world of Incident Response (IR), challenges are a given. In this blog post, I'll take you through an IR case that presented a unique set of hurdles and how the unexpected hero, the SRUM database, came to the rescue.
 
@@ -33,6 +33,10 @@ Have you ever found yourself in the following predicaments?
 1. You're called in for an urgent incident, only to discover it happened a month ago.
 2. The local IT admin attempted IR before you, leaving a trail of questions.
 3. There are no event logs to work with.
+
+On one hand it’s easy enough to know which systems had ransomware deployed on it, but what about scoping those systems that had mimikatz or other applications or malware installed by an attacker on it? Or what about finding out what else an attacker may have run while they were logged onto the system, what if they installed TeamViewer somewhere and have a backdoor back onto the network the minute you think you have recovered?
+
+Scoping an incident is essential in order to fully understand the impact of the incident and ensure that mitigation and recovery strategies have a greater chance of success.
 
 ![War story problem solving](../images/SRUM_8.png)
 
@@ -73,14 +77,14 @@ The SRUM database contains valuable information on various aspects of a computer
 Here are some key technical insights about SRUM:
 
 * The SRUM database retains historical data for up to 60 days. Unlike prefetch files, which have a more limited history, SRUM offers a longer window for analysing system activities. Moreover, SRUM does not overwrite files, making it a valuable resource for forensic investigations and long-term performance analysis.
-* SRUM records data at regular intervals. Specifically, it is written once every hour. This frequency ensures that it captures a granular picture of application execution, user logins, network connections, and resource utilization.
+* SRUM records data at regular intervals. Specifically, it is written once every hour. This frequency ensures that it captures a granular picture of application execution, user logins, network connections, and resource utilisation.
 * In addition to its hourly updates, the SRUM database also records data during system shutdown events. This is crucial for capturing information about the state of the system just before it is powered off. Examining this data can provide insights into the activities leading up to a system restart or shutdown.
 
 ![Information in the SRUM DB](../images/SRUM_3.png)
 
 ### Accessing the SRUM Database
 
-Accessing the SRUM database, typically stored in a file named SRUDB.DAT, requires specialized methods. It is located in `c:\windows\system32\sru\srudb.dat`. Since it's a critical system file, it is not meant to be accessed directly through standard user interfaces. To retrieve data from the SRUM database, you'll need to use techniques that provide raw access to the file or access it from a Volume Shadow Copy. These methods are commonly employed by forensic experts and security professionals for investigative and analysis purposes.
+Accessing the SRUM database, typically stored in a file named SRUDB.DAT, requires specializsd methods. It is located in `c:\windows\system32\sru\srudb.dat`. Since it's a critical system file, it is not meant to be accessed directly through standard user interfaces. To retrieve data from the SRUM database, you'll need to use techniques that provide raw access to the file or access it from a Volume Shadow Copy. These methods are commonly employed by forensic experts and security professionals for investigative and analysis purposes.
 
 ![You can collect the SRUM using live response tools](../images/SRUM_4.png)
 
@@ -88,9 +92,7 @@ Accessing the SRUM database, typically stored in a file named SRUDB.DAT, require
 
 To parse the information I found [SRUM-DUMP(2)](https://github.com/MarkBaggett/srum-dump) to be a valuable tool. This tool takes the input of a SRUDB.DAT file from the system you want to analyse, and an Excel template file that specifies the fields to extract and their format.
 
-![workflow](../images/SRUM_9.png)
-
-![SRUM-DUMP can parse the SRUDB file and export](../images/SRUM_5.png)
+ ![SRUM-DUMP can parse the SRUDB file and export](../images/SRUM_5.png)
 
 The most recent version of SRUMD-DUMP also has a GUI interface that, when run on a system as an administrator, can access the SRUDB.dat on the system (live acquisition).
 
@@ -101,6 +103,8 @@ If you provide the SYSTEM registry hive as well, the tool will associated the SI
 In the case I mentioned earlier, scoping was a significant challenge due to limited logs, deleted files, offline systems, sporadic antivirus deployment, and the absence of an EDR tool. 
 
 To overcome these obstacles and try and find out what the scope of the compromise was, I decided to extract all the available SRUDB.DAT files across the network, parse them, and then search for known indicators of compromise (IOCs). This allowed us to identify systems with Mimikatz usage and access by the attacker, along with related activities.
+
+![workflow](../images/SRUM_9.png)
 
 1. To facilitate the collection of the artefact(s) I needed to deploy an incident response tool across the fleet. You don't need to spend big money to achieve this, a deployment of [Velociraptor](https://github.com/Velocidex/velociraptor), an endpoint visibility and collection tool, can easily assist in the collect of artefacts from servers and workstations.
 2. After acquiring all the SRUDB and SYSTEM registry files that were available, I ran a script to parse them all through `srum-dump` and output the files.
