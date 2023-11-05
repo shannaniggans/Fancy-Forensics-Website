@@ -35,20 +35,20 @@ The information collected by SRUM is stored within the SRUDB.DAT file, which fol
 
 In essence, SRUM acts as a silent observer, meticulously cataloging the activities of every application, whether legitimate or malicious, across the system. This includes actions taken by attackers, making it a goldmine of information for digital forensics investigators.
 
-[Windows SRUM Overview](../images/SRUM_1.png)
+![Windows SRUM Overview](../images/SRUM_1.png)
 
 
 ## What's Inside the SRUM Database
 
 While I won't delve into the technical details here, the SRUM database records crucial information like application execution history, user accounts, and network connections.
 
-[Information in the SRUM DB](../images/SRUM_2.png)
+![Information in the SRUM DB](../images/SRUM_2.png)
 
 ## Understanding SRUM: Key Insights
 
 The SRUM database retains 60 days of data and doesn't overwrite files, unlike prefetch files. It's written once every hour and during system shutdown. To access the SRUDB.DAT file, you need raw access or can retrieve it from a Volume Shadow copy.
 
-[Information in the SRUM DB](../images/SRUM_3.png)
+![Information in the SRUM DB](../images/SRUM_3.png)
 
 ## How SRUM Saved the Day
 
