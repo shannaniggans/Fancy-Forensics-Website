@@ -50,6 +50,8 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
     [Read the follow up blog post Here](https://www.cosive.com/blog/docintel-misp-threat-intelligence-without-boiling-the-ocean)
 
+***
+
 ## 2022
 
 ### BSides Melbourne 2022
@@ -104,6 +106,7 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
 
 
+***
 
 ## 2020
 
@@ -115,6 +118,7 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
     Jessica interviews Shanna Daly about the latest trends in DFIR and explores Shanna's journey to becoming a leading expert in the field.
     [Listen Here](https://www.youtube.com/live/LsJARwXDDR4?si=gOaZt86dCOwYWvv_)
 
+***
 
 ## 2019
 
@@ -123,6 +127,9 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 * **(Presentation) Threat modelling in the land down under**
 
     Australia is (in)famous for its dangerous flora and fauna, most notably deadly spiders, snakes and jellyfish. We continually have to look at potential threats and assess our risk of basic things like venturing outside. This talk looks to help turn threat modelling exercises into something relatable, fun and educational. Too often security education is delivered in a dry format that is difficult for non security folks to digest, so let’s look at fun ways to turn that around!
+
+
+***
 
 ## 2016
 
