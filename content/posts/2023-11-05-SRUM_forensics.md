@@ -23,7 +23,9 @@ weight: 10
 
 ## Introduction
 
-In the world of Incident Response (IR), challenges are a given. In this blog post, I'll take you through a recent case that presented a unique set of hurdles and how the unexpected hero, the SRUM database, came to the rescue.
+This blog post is based on a presentation that I gave in 2019 a few times. In going through my archives I decided to write up these presentations into blog posts as the information is still relevant and I can update where needed.
+
+In the world of Incident Response (IR), challenges are a given. In this blog post, I'll take you through an IR case that presented a unique set of hurdles and how the unexpected hero, the SRUM database, came to the rescue.
 
 ## The Challenge: (Un)usual Incident Response Scenario
 
@@ -41,26 +43,48 @@ While these situations may seem daunting, they can also provide interesting case
 
 ## The Role of SRUM: A Hidden Gem in Forensics
 
-When dealing with incident response, investigators often rely on a set of familiar tools and techniques. However, sometimes a lesser-known tool can prove to be the key to unlocking critical insights. One such tool that has emerged as a hidden gem in the world of digital forensics is the Windows System Resource Usage Monitor, or SRUM.
+When dealing with incident response, investigators often rely on a set of familiar tools, techniques and artefacts. However, sometimes a lesser-known artefact can prove to be the key to unlocking critical insights. One such artefact that has emerged as a hidden gem in the world of digital forensics is the Windows System Resource Usage Monitor, or SRUM.
 
-SRUM is a relatively obscure component that many users may not be familiar with, often accessible through the "App History" tab in Task Manager. It serves as a valuable forensic resource by maintaining a comprehensive record of every application that executes on a system, including those that may have been intentionally deleted. This record even includes details like the user's Security Identifier (SID) responsible for executing each program.
+SRUM is a relatively obscure component that many users may not be familiar with, however the information held within the database is accessible through the "App History" tab in Task Manager. It serves as a valuable forensic resource by maintaining a comprehensive record of every application that executes on a system, including those that may have been intentionally deleted. This record even includes details like the user's Security Identifier (SID) responsible for executing each program.
 
-The information collected by SRUM is stored within the SRUDB.DAT file, which follows the Windows Extensible Storage Engine (ESE) database format. Introduced in Windows 8, SRUM is a part of the "Diagnostic Policy Service." Unlike more well-known artifacts like event logs, SRUM can provide insights into applications and executions that might otherwise be missed.
+The information collected by SRUM is stored within the SRUDB.DAT file, which follows the Windows Extensible Storage Engine (ESE) database format. Introduced in Windows 8, SRUM is a part of the "Diagnostic Policy Service." The SRUM can provide insights into applications and executions that might otherwise be missed.
 
 In essence, SRUM acts as a silent observer, meticulously cataloguing the activities of every application, whether legitimate or malicious, across the system. This includes actions taken by attackers, making it a goldmine of information for digital forensics investigators.
 
 ![Windows SRUM Overview](../images/SRUM_1.png)
 
-
 ## What's Inside the SRUM Database
 
-While I won't delve into the technical details here, the SRUM database records crucial information like application execution history, user accounts, and network connections.
+The SRUM database contains valuable information on various aspects of a computer's usage and performance, including:
+
+1. **Application Execution History**:
+   - Records information about when and which applications were launched, and how long they were running.
+
+2. **User Accounts**:
+   - Logs user logins, logouts, and session durations.
+
+3. **Network Connections**:
+   - Stores data on active network connections, including applications involved and data exchanged.
+
+4. **Resource Utilization Metrics**:
+   - Tracks CPU usage, memory consumption, and disk I/O statistics.
+
+5. **Timestamps and Metadata**:
+   - Associates entries with timestamps and metadata for chronological context.
 
 ![Information in the SRUM DB](../images/SRUM_2.png)
 
 ## Understanding SRUM: Key Insights
 
-The SRUM database retains 60 days of data and doesn't overwrite files, unlike prefetch files. It's written once every hour and during system shutdown. To access the SRUDB.DAT file, you need raw access or can retrieve it from a Volume Shadow copy.
+Here are some key technical insights about SRUM:
+
+* The SRUM database retains historical data for up to 60 days. Unlike prefetch files, which have a more limited history, SRUM offers a longer window for analysing system activities. Moreover, SRUM does not overwrite files, making it a valuable resource for forensic investigations and long-term performance analysis.
+* SRUM records data at regular intervals. Specifically, it is written once every hour. This frequency ensures that it captures a granular picture of application execution, user logins, network connections, and resource utilization.
+* In addition to its hourly updates, the SRUM database also records data during system shutdown events. This is crucial for capturing information about the state of the system just before it is powered off. Examining this data can provide insights into the activities leading up to a system restart or shutdown.
+
+### Accessing the SRUM Database
+
+Accessing the SRUM database, typically stored in a file named SRUDB.DAT, requires specialized methods. Since it's a critical system file, it is not meant to be accessed directly through standard user interfaces. To retrieve data from the SRUM database, you'll need to use techniques that provide raw access to the file or access it from a Volume Shadow Copy. These methods are commonly employed by forensic experts and security professionals for investigative and analysis purposes.
 
 ![Information in the SRUM DB](../images/SRUM_3.png)
 
