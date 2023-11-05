@@ -4,7 +4,6 @@ date: 2023-11-05
 linktitle: Leveraging SRUM for Incident Response
 
 tags: [
-    "forensics",
     "SRUM",
 ]
 categories: [
@@ -57,20 +56,15 @@ In essence, SRUM acts as a silent observer, meticulously cataloguing the activit
 
 The SRUM database contains valuable information on various aspects of a computer's usage and performance, including:
 
-1. **Application Execution History**:
-   - Records information about when and which applications were launched, and how long they were running.
+1. **Application Execution History**: Records information about when and which applications were launched, and how long they were running.
 
-2. **User Accounts**:
-   - Logs user logins, logouts, and session durations.
+2. **User Accounts**: Logs user logins, logouts, and session durations.
 
-3. **Network Connections**:
-   - Stores data on active network connections, including applications involved and data exchanged.
+3. **Network Connections**: Stores data on active network connections, including applications involved and data exchanged.
 
-4. **Resource Utilization Metrics**:
-   - Tracks CPU usage, memory consumption, and disk I/O statistics.
+4. **Resource Utilization Metrics**: Tracks CPU usage, memory consumption, and disk I/O statistics.
 
-5. **Timestamps and Metadata**:
-   - Associates entries with timestamps and metadata for chronological context.
+5. **Timestamps and Metadata**: Associates entries with timestamps and metadata for chronological context.
 
 ![Information in the SRUM DB](../images/SRUM_2.png)
 
@@ -82,29 +76,46 @@ Here are some key technical insights about SRUM:
 * SRUM records data at regular intervals. Specifically, it is written once every hour. This frequency ensures that it captures a granular picture of application execution, user logins, network connections, and resource utilization.
 * In addition to its hourly updates, the SRUM database also records data during system shutdown events. This is crucial for capturing information about the state of the system just before it is powered off. Examining this data can provide insights into the activities leading up to a system restart or shutdown.
 
-### Accessing the SRUM Database
-
-Accessing the SRUM database, typically stored in a file named SRUDB.DAT, requires specialized methods. Since it's a critical system file, it is not meant to be accessed directly through standard user interfaces. To retrieve data from the SRUM database, you'll need to use techniques that provide raw access to the file or access it from a Volume Shadow Copy. These methods are commonly employed by forensic experts and security professionals for investigative and analysis purposes.
-
 ![Information in the SRUM DB](../images/SRUM_3.png)
 
-## How SRUM Saved the Day
+### Accessing the SRUM Database
 
-In the case I mentioned earlier, scoping was a significant challenge due to limited logs, deleted files, offline systems, sporadic antivirus deployment, and the absence of an EDR tool. To overcome these obstacles, I decided to extract all available SRUDB.DAT files across the network, parse them, and search for known indicators of compromise (IOCs). This allowed us to identify systems with Mimikatz usage and access by the attacker, along with related activities.
+Accessing the SRUM database, typically stored in a file named SRUDB.DAT, requires specialized methods. It is located in `c:\windows\system32\sru\srudb.dat`. Since it's a critical system file, it is not meant to be accessed directly through standard user interfaces. To retrieve data from the SRUM database, you'll need to use techniques that provide raw access to the file or access it from a Volume Shadow Copy. These methods are commonly employed by forensic experts and security professionals for investigative and analysis purposes.
 
 ![You can collect the SRUM using live response tools](../images/SRUM_4.png)
 
-## Introducing SRUM-DUMP
+## Introducing SRUM-DUMP(2)
 
-I'm no SRUM expert, but I found SRUM-DUMP to be a valuable tool for parsing SRUDB.DAT files. This tool accepts inputs like the SRUDB.DAT file from the system you want to analyse and an Excel file that specifies the fields to extract and their format.
+To parse the information I found [SRUM-DUMP(2)](https://github.com/MarkBaggett/srum-dump) to be a valuable tool. This tool takes the input of a SRUDB.DAT file from the system you want to analyse, and an Excel template file that specifies the fields to extract and their format.
 
 ![workflow](../images/SRUM_9.png)
 
 ![SRUM-DUMP can parse the SRUDB file and export](../images/SRUM_5.png)
 
-## Use Cases for SRUM in Incident Response
+The most recent version of SRUMD-DUMP also has a GUI interface that, when run on a system as an administrator, can access the SRUDB.dat on the system (live acquisition).
 
-SRUM isn't just for piecing together timelines in IR; it has several other use cases:
+If you provide the SYSTEM registry hive as well, the tool will associated the SIDs with the appropriate usernames in the output.
+
+## How SRUM Saved the Day
+
+In the case I mentioned earlier, scoping was a significant challenge due to limited logs, deleted files, offline systems, sporadic antivirus deployment, and the absence of an EDR tool. 
+
+To overcome these obstacles and try and find out what the scope of the compromise was, I decided to extract all the available SRUDB.DAT files across the network, parse them, and then search for known indicators of compromise (IOCs). This allowed us to identify systems with Mimikatz usage and access by the attacker, along with related activities.
+
+1. To facilitate the collection of the artefact(s) I needed to deploy an incident response tool across the fleet. You don't need to spend big money to achieve this, a deployment of [Velociraptor](https://github.com/Velocidex/velociraptor), an endpoint visibility and collection tool, can easily assist in the collect of artefacts from servers and workstations.
+2. After acquiring all the SRUDB and SYSTEM registry files that were available, I ran a script to parse them all through `srum-dump` and output the files.
+3. I then used [Powergrep](https://www.powergrep.com/) to search across the excel files to find known indicators such as the names of the malware, and applications such as `mimikatz`. 
+
+With that data I was able to identify:
+* Systems that the attacker ran mimikatz and other malware on that were not subsequently encrypted by ransomware. This gave us an indication of what systems they were using as their entry point and jumpbox into the network.
+* Review network usage for any apps that might indicate exfiltration of a large amount of data.
+* Understand what users had been compromised.
+
+Now keeping in mind that I conducted this investigation in early 2019 and this was while I was doing my own consulting. Life is a little easier now, particularly if you can deploy a tool like Velociraptor. [Velociraptor now has inbuilt plugins](https://docs.velociraptor.app/blog/2019/2019-12-31_digging-into-the-system-resource-usage-monitor-srum-afbadb1a375/) to collect and parse the SRUM for you.
+
+## Leveraging SRUM in Incident Response: Diverse Use Cases
+
+Beyond its ability to piece together timelines, SRUM offers several valuable use cases for forensic activities. These use cases provide deep insights into system activities, enabling effective incident detection, response, and investigation.
 
 1. **Data Exfiltration:** Track the bytes sent and received per application process to detect suspicious data transfers.
 2. **Attacker Activity:** Identify what applications an attacker ran, mapped to their user SID.
