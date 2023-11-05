@@ -2,6 +2,16 @@
 author: "Shanna Daly"
 date: 2023-11-05
 linktitle: Leveraging SRUM for Incident Response
+
+tags: [
+    "forensics",
+    "SRUM",
+]
+categories: [
+    "Forensics",
+    "Windows Artefacts",
+]
+
 menu:
   main:
     parent: tutorials
@@ -23,7 +33,11 @@ Have you ever found yourself in the following predicaments?
 2. The local IT admin attempted IR before you, leaving a trail of questions.
 3. There are no event logs to work with.
 
+![War story problem solving](../images/SRUM_8.png)
+
 While these situations may seem daunting, they can also provide interesting case studies. Such was the case for me when I had to piece together a timeline involving an attacker who gained access to a network via RDP, ran Mimikatz on multiple systems, and unleashed Dharma ransomware.
+
+![War story attack sequence](../images/SRUM_7.png)
 
 ## The Role of SRUM: A Hidden Gem in Forensics
 
@@ -33,7 +47,7 @@ SRUM is a relatively obscure component that many users may not be familiar with,
 
 The information collected by SRUM is stored within the SRUDB.DAT file, which follows the Windows Extensible Storage Engine (ESE) database format. Introduced in Windows 8, SRUM is a part of the "Diagnostic Policy Service." Unlike more well-known artifacts like event logs, SRUM can provide insights into applications and executions that might otherwise be missed.
 
-In essence, SRUM acts as a silent observer, meticulously cataloging the activities of every application, whether legitimate or malicious, across the system. This includes actions taken by attackers, making it a goldmine of information for digital forensics investigators.
+In essence, SRUM acts as a silent observer, meticulously cataloguing the activities of every application, whether legitimate or malicious, across the system. This includes actions taken by attackers, making it a goldmine of information for digital forensics investigators.
 
 ![Windows SRUM Overview](../images/SRUM_1.png)
 
@@ -54,11 +68,15 @@ The SRUM database retains 60 days of data and doesn't overwrite files, unlike pr
 
 In the case I mentioned earlier, scoping was a significant challenge due to limited logs, deleted files, offline systems, sporadic antivirus deployment, and the absence of an EDR tool. To overcome these obstacles, I decided to extract all available SRUDB.DAT files across the network, parse them, and search for known indicators of compromise (IOCs). This allowed us to identify systems with Mimikatz usage and access by the attacker, along with related activities.
 
-
+![You can collect the SRUM using live response tools](../images/SRUM_4.png)
 
 ## Introducing SRUM-DUMP
 
 I'm no SRUM expert, but I found SRUM-DUMP to be a valuable tool for parsing SRUDB.DAT files. This tool accepts inputs like the SRUDB.DAT file from the system you want to analyse and an Excel file that specifies the fields to extract and their format.
+
+![workflow](../images/SRUM_9.png)
+
+![SRUM-DUMP can parse the SRUDB file and export](../images/SRUM_5.png)
 
 ## Use Cases for SRUM in Incident Response
 
@@ -68,6 +86,8 @@ SRUM isn't just for piecing together timelines in IR; it has several other use c
 2. **Attacker Activity:** Identify what applications an attacker ran, mapped to their user SID.
 3. **Network Connections:** Know which networks the system connected to, including data upload and download metrics.
 4. **Deleted Artefact Tracking:** Even if an executable has been deleted, SRUM can reveal the application path, user, and data usage.
+
+![Use cases](../images/SRUM_6.png)
 
 ## Conclusion
 
