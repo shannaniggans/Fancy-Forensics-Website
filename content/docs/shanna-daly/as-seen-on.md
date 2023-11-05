@@ -132,7 +132,7 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 *July 1 and 2, 2019*
 * **(Presentation) SRUM Forensics In Windows**
 
-    [Read the blog post](/posts/2023-11-05-SRUM_forensics)
+    [Read the blog post](/posts/2023-11-05-SRUM_forensics/)
 
 ***
 
