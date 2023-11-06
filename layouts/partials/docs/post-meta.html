@@ -2,6 +2,16 @@
   <h5>{{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}</h5>
 {{ end }}
 
+<!-- this post helped me here and ill help set up bio pages 
+  - https://moonbooth.com/hugo/authors/#step-1-add-each-author-to-the-front-matter-of-their-posts -->
+
+<!-- Adding the author under the date when its just me -->
+<h6>
+  {{ if .Params.author }}
+    {{ .Params.author }}
+  {{ end }}
+</h6>
+
 {{ range $taxonomy, $_ := .Site.Taxonomies }}
   {{ with $terms := $.GetTerms $taxonomy }}
   <div>
@@ -11,6 +21,8 @@
   </div>
   {{ end }}
 {{ end }}
+
+
 
 {{ if .Params.image }}
 <p>
