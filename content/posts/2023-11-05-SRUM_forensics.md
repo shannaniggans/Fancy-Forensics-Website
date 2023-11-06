@@ -13,6 +13,7 @@ categories: [
 
 weight: 10
 ---
+![Windows SRUM title slide](../images/SRUM_10.png)
 
 ## Introduction
 
