@@ -11,12 +11,6 @@ categories: [
     "Windows Artefacts",
 ]
 
-menu:
-  main:
-    parent: tutorials
-next: /tutorials/github-pages-blog
-prev: /tutorials/automated-deployments
-title: Leveraging SRUM for Incident Response
 weight: 10
 ---
 
