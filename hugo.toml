@@ -30,3 +30,7 @@ BookLogo = "logo.png"
 # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
 # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
 BookSection = 'docs'
+
+[services]
+  [services.googleAnalytics]
+    googleAnalytics = 'G-WV2F0X9QJ6'
