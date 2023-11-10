@@ -12,11 +12,8 @@ categories: [
 ]
 
 weight: 10
+image: "/posts/images/SRUM_10.png"
 ---
-![Windows SRUM title slide](../images/SRUM_10.png)
-
-## Introduction
-
 Back in 2019 when I was running my own consulting gig, Caccia Cybersecurity, I learnt about a new (at the time) artefact that had recently been discovered and 'decoded'. The SRUM. This blog post is based on a presentation that I gave in 2019 at The 2019 ICSL MRE conference in Sydney, and the Carbon Black Partner IR summit for APAC. In going through my archives of presentations, I decided to write up these presentations into blog posts as the information is still relevant and I can update where needed.
 
 In the world of Incident Response (IR), challenges are a given. In this blog post, I'll take you through an IR case that presented a unique set of hurdles and how the unexpected hero, the SRUM database, came to the rescue.
