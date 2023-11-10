@@ -237,7 +237,7 @@ In conclusion, even in what were relatively simple and straight forward investig
 
 ![Webshell](../images/webshells_22.png)
 
-In summary.
+### In summary
 
 * Webshells come in many flavours and one size does not fit all.
 * Anti Virus will rarely help you.
@@ -247,6 +247,14 @@ In summary.
 * Statistical analysis across logs as well as file systems will help to identify obfuscated webshells.
 
 ![Webshell](../images/webshells_23.png)
+
+## Let's talk defence
+
+I can't really leave this without talking a little bit about mitigations and prevention. While webshells are difficult to detect, they are not *impossible* to prevent. Forget for  minute about zero days. If we take a look at the references below and the information on the telerik vulnerability, these vulnerabilities are often being exploited several years after their discovery.
+
+> Keep those webshells at bay by staying on top of patches for your external web services. 
+
+P.S. Do not forget about your development servers too. A handy OSINT tool for taking a look at what you might not know about on your network is [DNS Dumpster](https://dnsdumpster.com/). Pop in your domain and it will enumerate services on your domain, I've used this before with customers and found development servers and web servers they either had forgotten about or didn't know existed.
 
 ## References
 * [Australian Cyber Security Centre - Web Shell Threat Awareness](https://www.cyber.gov.au/about-us/advisories/web-shells-threat-awareness-and-guidance)
