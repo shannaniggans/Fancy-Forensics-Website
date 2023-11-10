@@ -16,7 +16,7 @@ categories: [
 weight: 10
 image: "/posts/images/webshells_1.png"
 ---
-Incident response is a journey where things often unfold differently from our expectations. Requiring responders to adapt, utilise diverse skill sets, and employ various tools to achieve our objectives. In this post, I delve into three different webshell investigations that I conducted back in 2020, shedding light on the importance of versatility in digital forensics and incident response (DFIR). We explore the intricacies of DFIR work, the toolbox at our disposal, and the decision-making process behind selecting the right tools for the job.
+In the dynamic field of incident response, the unexpected is the only guarantee. Requiring responders to adapt, utilise diverse skill sets, and employ various tools to achieve our objectives. In this post, I delve into three different webshell investigations that I conducted back in 2020, shedding light on the importance of versatility in digital forensics and incident response (DFIR). We explore the intricacies of DFIR work, the toolbox at our disposal, and the decision-making process behind selecting the right tools for the job.
 
 > “If someone has more than one string to their bow, they have more than one ability or thing they can use if the first one they try is not successful.”
 
@@ -87,7 +87,11 @@ Accurately detecting webshells is of great significance to web server protection
 * The webshell may be small and innocuous looking, or be injected into a legitimate page on the web server.
 * Attackers are known to hide webshells in non-executable file formats, such as media files. Web servers configured to execute server-side code create additional challenges for detecting webshells, because on a web server, a media file is scanned for server-side execution instructions. Attackers can hide webshell scripts within a photo and upload it to a web server. When this file is loaded and analysed on a workstation, the photo is harmless. But when a web browser asks a server for this file, malicious code executes server side.
 
-## Case study 1 - Surprise
+## Case study 1 - The accidental discovery
+
+> Problem: An unnoticed webshell on an AWS-hosted server.
+> Solution: Employing filesystem analysis and log review.
+> Outcome: Uncovered multiple webshells dating back to 2019.
 
 The first case I’m going to talk about was finding a webshell that we weren’t even looking for, and turned out wasn’t part of the investigation.
 
@@ -115,7 +119,7 @@ In this case, how many of those files do you think were detected by AV? Zero, na
 
 ### Technique 3 - Web server log analysis
 
-Webshells themselves do not produce logs, however, as long as logging is enabled on the web server we can at least see whether or not the webshell was accessed. Thankfully for our customer only one of the webshells was actually accessed and we were able to glean this information via log analysis using an ELK stack.
+Webshells themselves do not produce logs, however, as long as logging is enabled on the web server we can at least see whether or not the webshell was accessed. Thankfully for our customer only one of the webshells was actually accessed and we were able to glean this information via log analysis using an [ELK stack](https://www.elastic.co/elastic-stack/).
 
 ![Web server log analysis](../images/webshells_11.png)
 
@@ -123,11 +127,15 @@ Webshells themselves do not produce logs, however, as long as logging is enabled
 
 Given the information we took further steps to analyse just how far the attacker had been able to go and also identify the source of the vulnerability that allowed the insertion of webshells onto the server. The customer was able to patch this and clean up the directory and remove the offending files (4 different webshells and literally hundreds of html defacement pages). 
 
-We found when the initial webshell was loaded and how (vulnerability in Telerik) which allowed files to be uploaded (webshells) which were then used to load defacement pages and gloat on zone-h. This instance was VERY lucky that these opportunistic attackers seemed to be just script kiddies and did not browse any further and find the PII on the server, nor did the utilise the SQL functionality to get to the back end database. But in different hands those webshells would have been lethal.
+We found when the initial webshell was loaded and how ([vulnerability in Telerik](https://nvd.nist.gov/vuln/detail/CVE-2019-18935)) which allowed files to be uploaded (webshells) which were then used to load defacement pages and gloat on zone-h. This instance was VERY lucky that these opportunistic attackers seemed to be just script kiddies and did not browse any further and find the PII on the server, nor did the utilise the SQL functionality to get to the back end database. But in different hands those webshells would have been lethal.
 
-## Case study 2 - Happy new year
+## Case study 2 - webshells hidden with Evidence loss
 
-In late 2019 a Citrix NetScalar vulnerability was discovered and then weaponised in early January 2020. Around this time I thing every organisation that was running NetScalar was calling in IR providers to determine whether their appliance had been compromised. It was a busy time.
+**Problem:** Evidence loss from a volatile RAM drive.
+**Solution:** Responders, through collaboration and file carving, extracted insights into attackers' activities.
+**Outcome:** The use of forensics tools and community collaboration proved vital.
+
+In late 2019 a Citrix NetScalar vulnerability was discovered and then weaponised in early January 2020. Around this time I think every organisation that was running NetScalar was calling in IR providers to determine whether their appliance had been compromised. It was a busy time.
 
 > An issue was found in Citrix Application Delivery Controller (ADC) and gateway (previously known as NetScalar) that allowed remote directory traversal. 
 
@@ -163,6 +171,10 @@ Checking on execution was made all the harder with logs rolling relatively quick
 
 ## Case study 3 - Obfuscation
 
+**Problem:** Suspected breach of PII
+**Solution:** Finding the webshell needle in a haystack with statistical analysis.
+**Outcome:** Identification of an obfuscated webshell, however, this was not cause of a breach.
+
 This particular customer was in the financial sector (international) and had reason to believe some customer contact information had been breached, but they needed confirmation of whether it had, and if so, how. The focus of this case was on identifying an obfuscated webshell based on how webshell scripts differ from normal files.
 
 ![Webshell](../images/webshells_17.png)
@@ -178,7 +190,7 @@ Looking for obfuscation within a file mainly involves five features:
 The essence of such detection involves calculating the range of statistical characteristics of normal PHP files through statistical methods. 
 
 ### Searching for obfuscation using NeoPI
-Remembering here that we are conducting forensics on an image of the webserver, and not doing live detections for this investigation. So the quickest way to look for webshells was using a tool called [NeoPI](https://github.com/CiscoCXSecurity/NeoPINeoPI). NeoPI focuses on the identification of obfuscated webshells by recursively scanning through the file system from a base directory and will rank files based on the results of a number of tests.
+Remembering here that we are conducting forensics on an image of the webserver, and not doing live detections for this investigation. So the quickest way to look for webshells was using a tool called [NeoPI](https://github.com/CiscoCXSecurity/NeoPI). NeoPI focuses on the identification of obfuscated webshells by recursively scanning through the file system from a base directory and will rank files based on the results of a number of tests.
 
 NeoPI runs under Python, and as previously mentioned, mounting the image so that all files are accessible I was able to point NeoPi at the web server directory and discover any obfuscated webshells present.
 
@@ -237,6 +249,6 @@ In summary.
 ![Webshell](../images/webshells_23.png)
 
 ## References
-https://www.cyber.gov.au/about-us/advisories/web-shells-threat-awareness-and-guidance
-https://www.microsoft.com/en-us/security/blog/2021/02/11/web-shell-attacks-continue-to-rise/
-https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-201a
+* [Australian Cyber Security Centre - Web Shell Threat Awareness](https://www.cyber.gov.au/about-us/advisories/web-shells-threat-awareness-and-guidance)
+* [Web shell attacks continue to rise](https://www.microsoft.com/en-us/security/blog/2021/02/11/web-shell-attacks-continue-to-rise/)
+* [Threat Actors Exploiting Citrix CVE-2023-3519 to Implant Webshells](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-201a)
