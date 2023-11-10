@@ -89,9 +89,12 @@ Accurately detecting webshells is of great significance to web server protection
 
 ## Case study 1 - The accidental discovery
 
-> Problem: An unnoticed webshell on an AWS-hosted server.
-> Solution: Employing filesystem analysis and log review.
-> Outcome: Uncovered multiple webshells dating back to 2019.
+**Problem:** An unnoticed webshell on an AWS-hosted server.
+
+**Solution:** Employing filesystem analysis and log review.
+
+**Outcome:** Uncovered multiple webshells dating back to 2019.
+
 
 The first case I’m going to talk about was finding a webshell that we weren’t even looking for, and turned out wasn’t part of the investigation.
 
@@ -132,8 +135,11 @@ We found when the initial webshell was loaded and how ([vulnerability in Telerik
 ## Case study 2 - webshells hidden with Evidence loss
 
 **Problem:** Evidence loss from a volatile RAM drive.
+
 **Solution:** Responders, through collaboration and file carving, extracted insights into attackers' activities.
+
 **Outcome:** The use of forensics tools and community collaboration proved vital.
+
 
 In late 2019 a Citrix NetScalar vulnerability was discovered and then weaponised in early January 2020. Around this time I think every organisation that was running NetScalar was calling in IR providers to determine whether their appliance had been compromised. It was a busy time.
 
@@ -171,9 +177,12 @@ Checking on execution was made all the harder with logs rolling relatively quick
 
 ## Case study 3 - Obfuscation
 
-**Problem:** Suspected breach of PII
+**Problem:** Suspected breach of PII.
+
 **Solution:** Finding the webshell needle in a haystack with statistical analysis.
+
 **Outcome:** Identification of an obfuscated webshell, however, this was not cause of a breach.
+
 
 This particular customer was in the financial sector (international) and had reason to believe some customer contact information had been breached, but they needed confirmation of whether it had, and if so, how. The focus of this case was on identifying an obfuscated webshell based on how webshell scripts differ from normal files.
 
