@@ -261,7 +261,7 @@ P.S. Do not forget about your development servers too. A handy OSINT tool for ta
 
 > A FIM solution could prevent or at a minimum detect malicious files loaded into directories within a web server file structure. This may not always work for every directory if the contents is dynamic or files are uploaded by third parties.
 
-> What I do know from experience is that without a person(s) being assigned responsibility for writing detections for an EDR tool, out of the box may not provide detections for incidents like these.
+> What I do know from experience is that without a person(s) being assigned responsibility for writing detections for an EDR tool, out of the box EDR may not provide detections for incidents like these.
 
 ## References
 * [Australian Cyber Security Centre - Web Shell Threat Awareness](https://www.cyber.gov.au/about-us/advisories/web-shells-threat-awareness-and-guidance)
