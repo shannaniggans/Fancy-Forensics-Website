@@ -32,5 +32,5 @@ BookLogo = "logo.png"
 BookSection = 'docs'
 
 [services]
-  [services.googleAnalytics]
-    googleAnalytics = 'G-WV2F0X9QJ6'
+[services.googleAnalytics]
+googleAnalytics = 'G-WV2F0X9QJ6'

@@ -6,6 +6,12 @@
   {{ partial "docs/post-meta" . }}
   {{- .Content -}}
 </article>
+
+<!-- adding in script here for utterances commenting -->
+<script src="https://utteranc.es/client.js" repo="shannaniggans/Fancy-Forensics-Website" issue-term="title"
+  theme="github-dark-orange" crossorigin="anonymous" async>
+  </script>
+
 {{ end }}
 
 {{ define "toc" }}
