@@ -90,9 +90,7 @@ Accurately detecting webshells is of great significance to web server protection
 ## Case study 1 - The accidental discovery
 
 **Problem:** An unnoticed webshell on an AWS-hosted server.
-
 **Solution:** Employing filesystem analysis and log review.
-
 **Outcome:** Uncovered multiple webshells dating back to 2019.
 
 
@@ -135,11 +133,8 @@ We found when the initial webshell was loaded and how ([vulnerability in Telerik
 ## Case study 2 - webshells hidden with Evidence loss
 
 **Problem:** Evidence loss from a volatile RAM drive.
-
 **Solution:** Responders, through collaboration and file carving, extracted insights into attackers' activities.
-
 **Outcome:** The use of forensics tools and community collaboration proved vital.
-
 
 In late 2019 a Citrix NetScalar vulnerability was discovered and then weaponised in early January 2020. Around this time I think every organisation that was running NetScalar was calling in IR providers to determine whether their appliance had been compromised. It was a busy time.
 
@@ -178,11 +173,8 @@ Checking on execution was made all the harder with logs rolling relatively quick
 ## Case study 3 - Obfuscation
 
 **Problem:** Suspected breach of PII.
-
 **Solution:** Finding the webshell needle in a haystack with statistical analysis.
-
 **Outcome:** Identification of an obfuscated webshell, however, this was not cause of a breach.
-
 
 This particular customer was in the financial sector (international) and had reason to believe some customer contact information had been breached, but they needed confirmation of whether it had, and if so, how. The focus of this case was on identifying an obfuscated webshell based on how webshell scripts differ from normal files.
 
@@ -264,6 +256,12 @@ I can't really leave this without talking a little bit about mitigations and pre
 > Keep those webshells at bay by staying on top of patches for your external web services. 
 
 P.S. Do not forget about your development servers too. A handy OSINT tool for taking a look at what you might not know about on your network is [DNS Dumpster](https://dnsdumpster.com/). Pop in your domain and it will enumerate services on your domain, I've used this before with customers and found development servers and web servers they either had forgotten about or didn't know existed.
+
+> Ensure logs are stored centrally and monitored. This should include web log analytics as the spike in web traffic we observed stood out like a sore thumb.
+
+> A FIM solution could prevent or at a minimum detect malicious files loaded into directories within a web server file structure. This may not always work for every directory if the contents is dynamic or files are uploaded by third parties.
+
+> What I do know from experience is that without a person(s) being assigned responsibility for writing detections for an EDR tool, out of the box may not provide detections for incidents like these.
 
 ## References
 * [Australian Cyber Security Centre - Web Shell Threat Awareness](https://www.cyber.gov.au/about-us/advisories/web-shells-threat-awareness-and-guidance)
