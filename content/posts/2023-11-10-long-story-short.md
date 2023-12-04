@@ -1,6 +1,6 @@
 ---
 author: "Shanna Daly"
-date: 2023-11-07
+date: 2023-12-04
 linktitle: Long story short, Persistence
 
 tags:
@@ -19,7 +19,7 @@ categories: [
 ]
 
 weight: 10
-image:
+image: "/posts/images/lss_1.png"
 draft: false
 ---
 ![Long story short title slide](/posts/images/lss_1.png)
