@@ -22,7 +22,7 @@ weight: 10
 image: "/posts/images/lss_1.png"
 draft: false
 ---
-![Long story short title slide](/posts/images/lss_1.png)
+
 In this post I am pulling parts out of a talk that I did called "Long story short". I delivered variations of this talk online for NZITF and the ICSL MRE webinar series in 2022 and also in person at CRESTCon 2022 in Canberra.
 
 I found these interesting at the time as they were novel to us (back then), and that a lack of detection and response capabilities enabled this threat actor to carry out their activities unhindered. For a long time.
