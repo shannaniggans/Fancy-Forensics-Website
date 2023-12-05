@@ -19,6 +19,13 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 
 ## 2023
 
+### Build amazing things (securely)
+*August 2, 2023*
+* **(Podcast) The Person They Call When Things GO WRONG with Shanna Daly**
+    In this episode, Laura and Shanna talk through what actually happens when a forensics team is called in after an incident, what data really matters, and what we can do as developers to make investigations easier.
+
+    [Listen](https://www.buildamazingthingssecurely.com/the-person-they-call-when-things-go-wrong-with-shanna-daly/ )
+
 ### The Diana Initiative
 *July 16, 2023*
 * **(Panel) Cybersecurity Research Panel**
@@ -53,6 +60,15 @@ Thank you for joining me on this journey, and I look forward to sharing more in 
 ***
 
 ## 2022
+
+### AusCERT “Share Today, Save Tomorrow”
+*November 25, 2022*
+
+* **(Podcast) Digital Forensics and Incident Response**
+  
+  With the changing threat surface presenting new and evolving challenges, Anthony speaks with Shanna Daly to discuss her views on digital forensics and incident response. They delve into the ‘how’ and ‘why’, which requires looking for proof of how something happened, from low-level investigations to evidence-based hypotheses of what is likely to have occurred.
+
+  [Listen Here](https://auscert.org.au/podcast/podcast-ep-16-understanding-and-combatting-cyber-attacks-copy/)
 
 ### BSides Melbourne 2022
 *September 10, 2022*
