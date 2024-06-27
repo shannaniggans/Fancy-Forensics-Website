@@ -17,7 +17,7 @@ Before we dive in, ensure you have the following:
 1. **Windows 10 or later**: Multipass and Windows Terminal are compatible with recent versions of Windows.
 2. **winget**: The Windows Package Manager, which you can use to install Multipass and Windows Terminal.
 
-### Step 1: Install Multipass and Windows Terminal Using winget
+## Step 1: Install Multipass and Windows Terminal Using winget
 
 First, open Command Prompt or PowerShell and use winget to install Multipass and Windows Terminal:
 
