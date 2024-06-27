@@ -4,6 +4,8 @@ weight: 1
 image: "/docs/resources/tooling/images/multipass.webp"
 ---
 
+![Multipass](/docs/resources/tooling/images/multipass.webp)
+
 # Using Multipass with Windows Terminal: A Quick Setup Guide
 
 If you're looking to run Ubuntu virtual machines effortlessly on your Windows machine, Multipass is an excellent tool to consider. It provides a lightweight VM manager that allows you to launch and manage Ubuntu instances quickly. When combined with the sleek interface of Windows Terminal, you get a powerful environment for development and testing. In this blog post, we'll walk you through setting up and configuring Multipass with Windows Terminal.
